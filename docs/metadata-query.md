@@ -55,4 +55,4 @@ EXAMPLE
   created_at,metadata.enterprise_1234.contracts
 ```
 
-_See code: [src/commands/metadata-query.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-query.js)_
+_See code: [src/commands/metadata-query.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/metadata-query.js)_

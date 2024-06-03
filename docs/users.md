@@ -61,7 +61,7 @@ EXAMPLE
   box users
 ```
 
-_See code: [src/commands/users/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/index.js)_
+_See code: [src/commands/users/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/index.js)_
 
 ## `box-u-ext users:add-collabs ID EMAILADDRESS`
 
@@ -94,7 +94,7 @@ EXAMPLE
   box users:add-collabs 22222 jdoe@example.com
 ```
 
-_See code: [src/commands/users/add-collabs.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/add-collabs.js)_
+_See code: [src/commands/users/add-collabs.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/add-collabs.js)_
 
 ## `box-u-ext users:create NAME [LOGIN]`
 
@@ -185,7 +185,7 @@ EXAMPLE
   box users:create "John Doe" jdoe@example.com
 ```
 
-_See code: [src/commands/users/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/create.js)_
+_See code: [src/commands/users/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/create.js)_
 
 ## `box-u-ext users:delete ID`
 
@@ -219,7 +219,7 @@ EXAMPLE
   box users:delete 33333
 ```
 
-_See code: [src/commands/users/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/delete.js)_
+_See code: [src/commands/users/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/delete.js)_
 
 ## `box-u-ext users:email-aliases USERID`
 
@@ -254,7 +254,7 @@ EXAMPLE
   box users:email-aliases 33333
 ```
 
-_See code: [src/commands/users/email-aliases/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/index.js)_
+_See code: [src/commands/users/email-aliases/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/email-aliases/index.js)_
 
 ## `box-u-ext users:email-aliases:add USERID EMAIL`
 
@@ -298,7 +298,7 @@ EXAMPLE
   box users:email-aliases:add 33333 user+alias@example.com
 ```
 
-_See code: [src/commands/users/email-aliases/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/add.js)_
+_See code: [src/commands/users/email-aliases/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/email-aliases/add.js)_
 
 ## `box-u-ext users:email-aliases:remove USERID ALIASID`
 
@@ -334,7 +334,7 @@ EXAMPLE
   box users:email-aliases:remove 33333 12345
 ```
 
-_See code: [src/commands/users/email-aliases/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/remove.js)_
+_See code: [src/commands/users/email-aliases/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/email-aliases/remove.js)_
 
 ## `box-u-ext users:get [ID]`
 
@@ -366,7 +366,7 @@ EXAMPLE
   box users:get 33333
 ```
 
-_See code: [src/commands/users/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/get.js)_
+_See code: [src/commands/users/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/get.js)_
 
 ## `box-u-ext users:groups ID`
 
@@ -408,7 +408,7 @@ EXAMPLE
   box users:groups 33333
 ```
 
-_See code: [src/commands/users/groups.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/groups.js)_
+_See code: [src/commands/users/groups.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/groups.js)_
 
 ## `box-u-ext users:invite EMAIL ENTERPRISEID`
 
@@ -444,7 +444,7 @@ EXAMPLE
   box users:invite user@example.com 12345
 ```
 
-_See code: [src/commands/users/invite.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/invite.js)_
+_See code: [src/commands/users/invite.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/invite.js)_
 
 ## `box-u-ext users:search NAME`
 
@@ -479,7 +479,7 @@ EXAMPLE
   box users:search "John Doe"
 ```
 
-_See code: [src/commands/users/search.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/search.js)_
+_See code: [src/commands/users/search.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/search.js)_
 
 ## `box-u-ext users:take-ownership ID`
 
@@ -511,7 +511,7 @@ EXAMPLE
   box users:take-ownership 33333
 ```
 
-_See code: [src/commands/users/take-ownership.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/take-ownership.js)_
+_See code: [src/commands/users/take-ownership.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/take-ownership.js)_
 
 ## `box-u-ext users:terminate-session`
 
@@ -545,7 +545,7 @@ EXAMPLE
   box users:terminate-session --user-ids 123 345 --user-logins abc@example.com def@example.com
 ```
 
-_See code: [src/commands/users/terminate-session.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/terminate-session.js)_
+_See code: [src/commands/users/terminate-session.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/terminate-session.js)_
 
 ## `box-u-ext users:transfer-content USERID NEWUSERID`
 
@@ -582,7 +582,7 @@ EXAMPLE
   box users:transfer-content 33333 44444
 ```
 
-_See code: [src/commands/users/transfer-content.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/transfer-content.js)_
+_See code: [src/commands/users/transfer-content.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/transfer-content.js)_
 
 ## `box-u-ext users:update ID`
 
@@ -678,4 +678,4 @@ EXAMPLE
   box users:update 33333 --status inactive
 ```
 
-_See code: [src/commands/users/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/update.js)_
+_See code: [src/commands/users/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/users/update.js)_

@@ -24,4 +24,4 @@ OPTIONS
   --no-color         Turn off colors for logging
 ```
 
-_See code: [src/commands/login.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/login.js)_
+_See code: [src/commands/login.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/login.js)_

@@ -1,6 +1,6 @@
 {
 	"name": "@box-u-ext/cli",
-	"description": "Unofficial command line interface for the Box API",
+	"description": "Extended Box CLI made by Box Consulting",
 	"keywords": [
 		"box",
 		"cli",
@@ -92,7 +92,7 @@
 		},
 		"windows": {
 			"name": "box-u-ext",
-			"keypath": "key/key.pem"
+			"keypath": "key/code_signing.crt"
 		},
 		"plugins": [
 			"@oclif/plugin-help",

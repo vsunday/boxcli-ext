@@ -38,7 +38,7 @@ EXAMPLE
   box collections
 ```
 
-_See code: [src/commands/collections/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/index.js)_
+_See code: [src/commands/collections/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collections/index.js)_
 
 ## `box-u-ext collections:add ITEMTYPE ITEMID COLLECTIONID`
 
@@ -72,7 +72,7 @@ EXAMPLE
   box collections:add file 11111 12345
 ```
 
-_See code: [src/commands/collections/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/add.js)_
+_See code: [src/commands/collections/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collections/add.js)_
 
 ## `box-u-ext collections:items ID`
 
@@ -111,7 +111,7 @@ EXAMPLE
   box collections:items 12345
 ```
 
-_See code: [src/commands/collections/items.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/items.js)_
+_See code: [src/commands/collections/items.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collections/items.js)_
 
 ## `box-u-ext collections:remove ITEMTYPE ITEMID COLLECTIONID`
 
@@ -145,4 +145,4 @@ EXAMPLE
   box collections:remove file 11111 12345
 ```
 
-_See code: [src/commands/collections/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/remove.js)_
+_See code: [src/commands/collections/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collections/remove.js)_
