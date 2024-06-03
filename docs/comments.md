@@ -1,21 +1,21 @@
-`box comments`
-==============
+`box-u-ext comments`
+====================
 
 Manage comments on files
 
-* [`box comments:create FILEID`](#box-commentscreate-fileid)
-* [`box comments:delete ID`](#box-commentsdelete-id)
-* [`box comments:get ID`](#box-commentsget-id)
-* [`box comments:reply ID`](#box-commentsreply-id)
-* [`box comments:update ID`](#box-commentsupdate-id)
+* [`box-u-ext comments:create FILEID`](#box-u-ext-commentscreate-fileid)
+* [`box-u-ext comments:delete ID`](#box-u-ext-commentsdelete-id)
+* [`box-u-ext comments:get ID`](#box-u-ext-commentsget-id)
+* [`box-u-ext comments:reply ID`](#box-u-ext-commentsreply-id)
+* [`box-u-ext comments:update ID`](#box-u-ext-commentsupdate-id)
 
-## `box comments:create FILEID`
+## `box-u-ext comments:create FILEID`
 
 Create a comment on a file
 
 ```
 USAGE
-  $ box comments:create FILEID
+  $ box-u-ext comments:create FILEID
 
 ARGUMENTS
   FILEID  ID of file on which to comment
@@ -43,15 +43,15 @@ EXAMPLE
   box comments:create 11111 --message "Thanks for the update!"
 ```
 
-_See code: [src/commands/comments/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/comments/create.js)_
+_See code: [src/commands/comments/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/comments/create.js)_
 
-## `box comments:delete ID`
+## `box-u-ext comments:delete ID`
 
 Delete a comment
 
 ```
 USAGE
-  $ box comments:delete ID
+  $ box-u-ext comments:delete ID
 
 ARGUMENTS
   ID  ID of the comment to delete
@@ -75,15 +75,15 @@ EXAMPLE
   box comments:delete 12345
 ```
 
-_See code: [src/commands/comments/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/comments/delete.js)_
+_See code: [src/commands/comments/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/comments/delete.js)_
 
-## `box comments:get ID`
+## `box-u-ext comments:get ID`
 
 Get information about a comment
 
 ```
 USAGE
-  $ box comments:get ID
+  $ box-u-ext comments:get ID
 
 ARGUMENTS
   ID  ID of the comment to get
@@ -107,15 +107,15 @@ EXAMPLE
   box comments:get 12345
 ```
 
-_See code: [src/commands/comments/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/comments/get.js)_
+_See code: [src/commands/comments/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/comments/get.js)_
 
-## `box comments:reply ID`
+## `box-u-ext comments:reply ID`
 
 Reply to a comment
 
 ```
 USAGE
-  $ box comments:reply ID
+  $ box-u-ext comments:reply ID
 
 ARGUMENTS
   ID  ID of the comment to reply to
@@ -143,15 +143,15 @@ EXAMPLE
   box comments:reply 12345 --message "No problem!"
 ```
 
-_See code: [src/commands/comments/reply.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/comments/reply.js)_
+_See code: [src/commands/comments/reply.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/comments/reply.js)_
 
-## `box comments:update ID`
+## `box-u-ext comments:update ID`
 
 Update a comment
 
 ```
 USAGE
-  $ box comments:update ID
+  $ box-u-ext comments:update ID
 
 ARGUMENTS
   ID  ID of the comment to update
@@ -177,4 +177,4 @@ EXAMPLE
   box comments:update 12345 --message "Thank you for the update!"
 ```
 
-_See code: [src/commands/comments/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/comments/update.js)_
+_See code: [src/commands/comments/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/comments/update.js)_

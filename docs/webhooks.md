@@ -1,21 +1,21 @@
-`box webhooks`
-==============
+`box-u-ext webhooks`
+====================
 
 List all webhooks
 
-* [`box webhooks`](#box-webhooks)
-* [`box webhooks:create TARGETTYPE TARGETID`](#box-webhookscreate-targettype-targetid)
-* [`box webhooks:delete ID`](#box-webhooksdelete-id)
-* [`box webhooks:get ID`](#box-webhooksget-id)
-* [`box webhooks:update ID`](#box-webhooksupdate-id)
+* [`box-u-ext webhooks`](#box-u-ext-webhooks)
+* [`box-u-ext webhooks:create TARGETTYPE TARGETID`](#box-u-ext-webhookscreate-targettype-targetid)
+* [`box-u-ext webhooks:delete ID`](#box-u-ext-webhooksdelete-id)
+* [`box-u-ext webhooks:get ID`](#box-u-ext-webhooksget-id)
+* [`box-u-ext webhooks:update ID`](#box-u-ext-webhooksupdate-id)
 
-## `box webhooks`
+## `box-u-ext webhooks`
 
 List all webhooks
 
 ```
 USAGE
-  $ box webhooks
+  $ box-u-ext webhooks
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -40,21 +40,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box webhooks:list
+  $ box-u-ext webhooks:list
 
 EXAMPLE
   box webhooks
 ```
 
-_See code: [src/commands/webhooks/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/webhooks/index.js)_
+_See code: [src/commands/webhooks/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/webhooks/index.js)_
 
-## `box webhooks:create TARGETTYPE TARGETID`
+## `box-u-ext webhooks:create TARGETTYPE TARGETID`
 
 Create a new webhook
 
 ```
 USAGE
-  $ box webhooks:create TARGETTYPE TARGETID
+  $ box-u-ext webhooks:create TARGETTYPE TARGETID
 
 ARGUMENTS
   TARGETTYPE  (file|folder) Type of Box item to create a webhook on
@@ -98,15 +98,15 @@ EXAMPLE
   box webhooks:create folder 22222 --triggers FILE.DELETED --address https://example.com/webhook/deletion
 ```
 
-_See code: [src/commands/webhooks/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/webhooks/create.js)_
+_See code: [src/commands/webhooks/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/webhooks/create.js)_
 
-## `box webhooks:delete ID`
+## `box-u-ext webhooks:delete ID`
 
 Delete a webhook
 
 ```
 USAGE
-  $ box webhooks:delete ID
+  $ box-u-ext webhooks:delete ID
 
 ARGUMENTS
   ID  ID of the webhook to delete
@@ -130,15 +130,15 @@ EXAMPLE
   box webhooks:delete 12345
 ```
 
-_See code: [src/commands/webhooks/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/webhooks/delete.js)_
+_See code: [src/commands/webhooks/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/webhooks/delete.js)_
 
-## `box webhooks:get ID`
+## `box-u-ext webhooks:get ID`
 
 Get information about a webhook
 
 ```
 USAGE
-  $ box webhooks:get ID
+  $ box-u-ext webhooks:get ID
 
 ARGUMENTS
   ID  ID of the webhook to get
@@ -162,15 +162,15 @@ EXAMPLE
   box webhooks:get 12345
 ```
 
-_See code: [src/commands/webhooks/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/webhooks/get.js)_
+_See code: [src/commands/webhooks/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/webhooks/get.js)_
 
-## `box webhooks:update ID`
+## `box-u-ext webhooks:update ID`
 
 Update a webhook
 
 ```
 USAGE
-  $ box webhooks:update ID
+  $ box-u-ext webhooks:update ID
 
 ARGUMENTS
   ID  ID of the webhook to update
@@ -211,4 +211,4 @@ EXAMPLE
   box webhooks:update 12345 --triggers FILE.DELETED,FOLDER.DELETED
 ```
 
-_See code: [src/commands/webhooks/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/webhooks/update.js)_
+_See code: [src/commands/webhooks/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/webhooks/update.js)_

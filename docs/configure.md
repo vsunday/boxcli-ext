@@ -1,23 +1,23 @@
-`box configure`
-===============
+`box-u-ext configure`
+=====================
 
 Configure the Box CLI
 
-* [`box configure:environments:add PATH`](#box-configureenvironmentsadd-path)
-* [`box configure:environments:delete [NAME]`](#box-configureenvironmentsdelete-name)
-* [`box configure:environments:get`](#box-configureenvironmentsget)
-* [`box configure:environments:set-current [NAME]`](#box-configureenvironmentsset-current-name)
-* [`box configure:environments:switch-user [USERID]`](#box-configureenvironmentsswitch-user-userid)
-* [`box configure:environments:update [NAME]`](#box-configureenvironmentsupdate-name)
-* [`box configure:settings`](#box-configuresettings)
+* [`box-u-ext configure:environments:add PATH`](#box-u-ext-configureenvironmentsadd-path)
+* [`box-u-ext configure:environments:delete [NAME]`](#box-u-ext-configureenvironmentsdelete-name)
+* [`box-u-ext configure:environments:get`](#box-u-ext-configureenvironmentsget)
+* [`box-u-ext configure:environments:set-current [NAME]`](#box-u-ext-configureenvironmentsset-current-name)
+* [`box-u-ext configure:environments:switch-user [USERID]`](#box-u-ext-configureenvironmentsswitch-user-userid)
+* [`box-u-ext configure:environments:update [NAME]`](#box-u-ext-configureenvironmentsupdate-name)
+* [`box-u-ext configure:settings`](#box-u-ext-configuresettings)
 
-## `box configure:environments:add PATH`
+## `box-u-ext configure:environments:add PATH`
 
 Add a new Box environment
 
 ```
 USAGE
-  $ box configure:environments:add PATH
+  $ box-u-ext configure:environments:add PATH
 
 ARGUMENTS
   PATH  Provide a file path to configuration file
@@ -55,15 +55,15 @@ OPTIONS
       Set this new environment as your current environment
 ```
 
-_See code: [src/commands/configure/environments/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/add.js)_
+_See code: [src/commands/configure/environments/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/add.js)_
 
-## `box configure:environments:delete [NAME]`
+## `box-u-ext configure:environments:delete [NAME]`
 
 Delete a Box environment
 
 ```
 USAGE
-  $ box configure:environments:delete [NAME]
+  $ box-u-ext configure:environments:delete [NAME]
 
 ARGUMENTS
   NAME  Name of the environment
@@ -75,15 +75,15 @@ OPTIONS
   --no-color     Turn off colors for logging
 ```
 
-_See code: [src/commands/configure/environments/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/delete.js)_
+_See code: [src/commands/configure/environments/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/delete.js)_
 
-## `box configure:environments:get`
+## `box-u-ext configure:environments:get`
 
 Get a Box environment
 
 ```
 USAGE
-  $ box configure:environments:get
+  $ box-u-ext configure:environments:get
 
 OPTIONS
   -c, --current    Get the current default Box environment
@@ -94,15 +94,15 @@ OPTIONS
   --no-color       Turn off colors for logging
 ```
 
-_See code: [src/commands/configure/environments/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/get.js)_
+_See code: [src/commands/configure/environments/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/get.js)_
 
-## `box configure:environments:set-current [NAME]`
+## `box-u-ext configure:environments:set-current [NAME]`
 
 Set your current Box environment to use
 
 ```
 USAGE
-  $ box configure:environments:set-current [NAME]
+  $ box-u-ext configure:environments:set-current [NAME]
 
 ARGUMENTS
   NAME  Name of the environment
@@ -114,18 +114,18 @@ OPTIONS
   --no-color     Turn off colors for logging
 
 ALIASES
-  $ box configure:environments:select
+  $ box-u-ext configure:environments:select
 ```
 
-_See code: [src/commands/configure/environments/set-current.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/set-current.js)_
+_See code: [src/commands/configure/environments/set-current.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/set-current.js)_
 
-## `box configure:environments:switch-user [USERID]`
+## `box-u-ext configure:environments:switch-user [USERID]`
 
 Switch the default Box user to run commands as
 
 ```
 USAGE
-  $ box configure:environments:switch-user [USERID]
+  $ box-u-ext configure:environments:switch-user [USERID]
 
 ARGUMENTS
   USERID  The user ID to switch to
@@ -147,15 +147,15 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 ```
 
-_See code: [src/commands/configure/environments/switch-user.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/switch-user.js)_
+_See code: [src/commands/configure/environments/switch-user.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/switch-user.js)_
 
-## `box configure:environments:update [NAME]`
+## `box-u-ext configure:environments:update [NAME]`
 
 Update a Box environment
 
 ```
 USAGE
-  $ box configure:environments:update [NAME]
+  $ box-u-ext configure:environments:update [NAME]
 
 ARGUMENTS
   NAME  The name of the environment
@@ -181,15 +181,15 @@ OPTIONS
                                        be stored for each Box environment
 ```
 
-_See code: [src/commands/configure/environments/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/environments/update.js)_
+_See code: [src/commands/configure/environments/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/environments/update.js)_
 
-## `box configure:settings`
+## `box-u-ext configure:settings`
 
 View and update CLI configuration settings
 
 ```
 USAGE
-  $ box configure:settings
+  $ box-u-ext configure:settings
 
 OPTIONS
   -h, --help                                     Show CLI help
@@ -213,4 +213,4 @@ OPTIONS
   --reports-folder-path=reports-folder-path      Set folder path for the reports folder
 ```
 
-_See code: [src/commands/configure/settings.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/configure/settings.js)_
+_See code: [src/commands/configure/settings.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/configure/settings.js)_

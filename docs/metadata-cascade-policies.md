@@ -1,20 +1,20 @@
-`box metadata-cascade-policies`
-===============================
+`box-u-ext metadata-cascade-policies`
+=====================================
 
 List the metadata cascade policies on a folder
 
-* [`box metadata-cascade-policies FOLDERID`](#box-metadata-cascade-policies-folderid)
-* [`box metadata-cascade-policies:delete ID`](#box-metadata-cascade-policiesdelete-id)
-* [`box metadata-cascade-policies:force-apply ID`](#box-metadata-cascade-policiesforce-apply-id)
-* [`box metadata-cascade-policies:get ID`](#box-metadata-cascade-policiesget-id)
+* [`box-u-ext metadata-cascade-policies FOLDERID`](#box-u-ext-metadata-cascade-policies-folderid)
+* [`box-u-ext metadata-cascade-policies:delete ID`](#box-u-ext-metadata-cascade-policiesdelete-id)
+* [`box-u-ext metadata-cascade-policies:force-apply ID`](#box-u-ext-metadata-cascade-policiesforce-apply-id)
+* [`box-u-ext metadata-cascade-policies:get ID`](#box-u-ext-metadata-cascade-policiesget-id)
 
-## `box metadata-cascade-policies FOLDERID`
+## `box-u-ext metadata-cascade-policies FOLDERID`
 
 List the metadata cascade policies on a folder
 
 ```
 USAGE
-  $ box metadata-cascade-policies FOLDERID
+  $ box-u-ext metadata-cascade-policies FOLDERID
 
 ARGUMENTS
   FOLDERID  The ID of the folder to list cascade policies for
@@ -47,15 +47,15 @@ EXAMPLE
   box metadata-cascade-policies 22222
 ```
 
-_See code: [src/commands/metadata-cascade-policies/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-cascade-policies/index.js)_
+_See code: [src/commands/metadata-cascade-policies/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-cascade-policies/index.js)_
 
-## `box metadata-cascade-policies:delete ID`
+## `box-u-ext metadata-cascade-policies:delete ID`
 
 Delete a metadata cascade policy
 
 ```
 USAGE
-  $ box metadata-cascade-policies:delete ID
+  $ box-u-ext metadata-cascade-policies:delete ID
 
 ARGUMENTS
   ID  The ID of the metadata cascade policy to delete
@@ -79,15 +79,15 @@ EXAMPLE
   box metadata-cascade-policies:delete 12345
 ```
 
-_See code: [src/commands/metadata-cascade-policies/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-cascade-policies/delete.js)_
+_See code: [src/commands/metadata-cascade-policies/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-cascade-policies/delete.js)_
 
-## `box metadata-cascade-policies:force-apply ID`
+## `box-u-ext metadata-cascade-policies:force-apply ID`
 
 Force apply a cascade policy to the existing items in a folder
 
 ```
 USAGE
-  $ box metadata-cascade-policies:force-apply ID
+  $ box-u-ext metadata-cascade-policies:force-apply ID
 
 ARGUMENTS
   ID  The ID of the cascade policy to force apply
@@ -112,15 +112,15 @@ EXAMPLE
   box metadata-cascade-policies:force-apply 12345 --conflict-resolution overwrite
 ```
 
-_See code: [src/commands/metadata-cascade-policies/force-apply.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-cascade-policies/force-apply.js)_
+_See code: [src/commands/metadata-cascade-policies/force-apply.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-cascade-policies/force-apply.js)_
 
-## `box metadata-cascade-policies:get ID`
+## `box-u-ext metadata-cascade-policies:get ID`
 
 Get information about a metadata cascade policy
 
 ```
 USAGE
-  $ box metadata-cascade-policies:get ID
+  $ box-u-ext metadata-cascade-policies:get ID
 
 ARGUMENTS
   ID  The ID of the cascade policy to get
@@ -144,4 +144,4 @@ EXAMPLE
   box metadata-cascade-policies:get 12345
 ```
 
-_See code: [src/commands/metadata-cascade-policies/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-cascade-policies/get.js)_
+_See code: [src/commands/metadata-cascade-policies/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-cascade-policies/get.js)_

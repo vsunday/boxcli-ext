@@ -1,19 +1,19 @@
-`box device-pins`
-=================
+`box-u-ext device-pins`
+=======================
 
 List all the device pins for your enterprise
 
-* [`box device-pins`](#box-device-pins)
-* [`box device-pins:delete ID`](#box-device-pinsdelete-id)
-* [`box device-pins:get ID`](#box-device-pinsget-id)
+* [`box-u-ext device-pins`](#box-u-ext-device-pins)
+* [`box-u-ext device-pins:delete ID`](#box-u-ext-device-pinsdelete-id)
+* [`box-u-ext device-pins:get ID`](#box-u-ext-device-pinsget-id)
 
-## `box device-pins`
+## `box-u-ext device-pins`
 
 List all the device pins for your enterprise
 
 ```
 USAGE
-  $ box device-pins
+  $ box-u-ext device-pins
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -42,15 +42,15 @@ EXAMPLE
   box device-pins
 ```
 
-_See code: [src/commands/device-pins/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/device-pins/index.js)_
+_See code: [src/commands/device-pins/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/device-pins/index.js)_
 
-## `box device-pins:delete ID`
+## `box-u-ext device-pins:delete ID`
 
 Delete individual device pin
 
 ```
 USAGE
-  $ box device-pins:delete ID
+  $ box-u-ext device-pins:delete ID
 
 ARGUMENTS
   ID  ID of the device pin to delete
@@ -74,15 +74,15 @@ EXAMPLE
   box device-pins:delete 12345
 ```
 
-_See code: [src/commands/device-pins/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/device-pins/delete.js)_
+_See code: [src/commands/device-pins/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/device-pins/delete.js)_
 
-## `box device-pins:get ID`
+## `box-u-ext device-pins:get ID`
 
 Get information about an individual device pin
 
 ```
 USAGE
-  $ box device-pins:get ID
+  $ box-u-ext device-pins:get ID
 
 ARGUMENTS
   ID  ID of the device pin to get
@@ -106,4 +106,4 @@ EXAMPLE
   box device-pins:get 12345
 ```
 
-_See code: [src/commands/device-pins/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/device-pins/get.js)_
+_See code: [src/commands/device-pins/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/device-pins/get.js)_

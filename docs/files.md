@@ -1,44 +1,44 @@
-`box files`
-===========
+`box-u-ext files`
+=================
 
 Manage files
 
-* [`box files:collaborations ID`](#box-filescollaborations-id)
-* [`box files:collaborations:add ID`](#box-filescollaborationsadd-id)
-* [`box files:comments ID`](#box-filescomments-id)
-* [`box files:copy ID PARENTID`](#box-filescopy-id-parentid)
-* [`box files:delete ID`](#box-filesdelete-id)
-* [`box files:download ID`](#box-filesdownload-id)
-* [`box files:get ID`](#box-filesget-id)
-* [`box files:lock ID`](#box-fileslock-id)
-* [`box files:metadata ID`](#box-filesmetadata-id)
-* [`box files:metadata:add ID`](#box-filesmetadataadd-id)
-* [`box files:metadata:get ID`](#box-filesmetadataget-id)
-* [`box files:metadata:remove ID`](#box-filesmetadataremove-id)
-* [`box files:metadata:set ID`](#box-filesmetadataset-id)
-* [`box files:metadata:update ID`](#box-filesmetadataupdate-id)
-* [`box files:move ID PARENTID`](#box-filesmove-id-parentid)
-* [`box files:rename ID NAME`](#box-filesrename-id-name)
-* [`box files:share ID`](#box-filesshare-id)
-* [`box files:tasks ID`](#box-filestasks-id)
-* [`box files:unlock ID`](#box-filesunlock-id)
-* [`box files:unshare ID`](#box-filesunshare-id)
-* [`box files:update ID`](#box-filesupdate-id)
-* [`box files:upload PATH`](#box-filesupload-path)
-* [`box files:versions FILEID`](#box-filesversions-fileid)
-* [`box files:versions:delete FILEID FILEVERSIONID`](#box-filesversionsdelete-fileid-fileversionid)
-* [`box files:versions:download FILEID FILEVERSIONID`](#box-filesversionsdownload-fileid-fileversionid)
-* [`box files:versions:promote FILEID FILEVERSIONID`](#box-filesversionspromote-fileid-fileversionid)
-* [`box files:versions:upload FILEID PATH`](#box-filesversionsupload-fileid-path)
-* [`box files:zip NAME`](#box-fileszip-name)
+* [`box-u-ext files:collaborations ID`](#box-u-ext-filescollaborations-id)
+* [`box-u-ext files:collaborations:add ID`](#box-u-ext-filescollaborationsadd-id)
+* [`box-u-ext files:comments ID`](#box-u-ext-filescomments-id)
+* [`box-u-ext files:copy ID PARENTID`](#box-u-ext-filescopy-id-parentid)
+* [`box-u-ext files:delete ID`](#box-u-ext-filesdelete-id)
+* [`box-u-ext files:download ID`](#box-u-ext-filesdownload-id)
+* [`box-u-ext files:get ID`](#box-u-ext-filesget-id)
+* [`box-u-ext files:lock ID`](#box-u-ext-fileslock-id)
+* [`box-u-ext files:metadata ID`](#box-u-ext-filesmetadata-id)
+* [`box-u-ext files:metadata:add ID`](#box-u-ext-filesmetadataadd-id)
+* [`box-u-ext files:metadata:get ID`](#box-u-ext-filesmetadataget-id)
+* [`box-u-ext files:metadata:remove ID`](#box-u-ext-filesmetadataremove-id)
+* [`box-u-ext files:metadata:set ID`](#box-u-ext-filesmetadataset-id)
+* [`box-u-ext files:metadata:update ID`](#box-u-ext-filesmetadataupdate-id)
+* [`box-u-ext files:move ID PARENTID`](#box-u-ext-filesmove-id-parentid)
+* [`box-u-ext files:rename ID NAME`](#box-u-ext-filesrename-id-name)
+* [`box-u-ext files:share ID`](#box-u-ext-filesshare-id)
+* [`box-u-ext files:tasks ID`](#box-u-ext-filestasks-id)
+* [`box-u-ext files:unlock ID`](#box-u-ext-filesunlock-id)
+* [`box-u-ext files:unshare ID`](#box-u-ext-filesunshare-id)
+* [`box-u-ext files:update ID`](#box-u-ext-filesupdate-id)
+* [`box-u-ext files:upload PATH`](#box-u-ext-filesupload-path)
+* [`box-u-ext files:versions FILEID`](#box-u-ext-filesversions-fileid)
+* [`box-u-ext files:versions:delete FILEID FILEVERSIONID`](#box-u-ext-filesversionsdelete-fileid-fileversionid)
+* [`box-u-ext files:versions:download FILEID FILEVERSIONID`](#box-u-ext-filesversionsdownload-fileid-fileversionid)
+* [`box-u-ext files:versions:promote FILEID FILEVERSIONID`](#box-u-ext-filesversionspromote-fileid-fileversionid)
+* [`box-u-ext files:versions:upload FILEID PATH`](#box-u-ext-filesversionsupload-fileid-path)
+* [`box-u-ext files:zip NAME`](#box-u-ext-fileszip-name)
 
-## `box files:collaborations ID`
+## `box-u-ext files:collaborations ID`
 
 List all collaborations on a file
 
 ```
 USAGE
-  $ box files:collaborations ID
+  $ box-u-ext files:collaborations ID
 
 ARGUMENTS
   ID  ID of the file to get collaborations for
@@ -66,21 +66,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:collaborations:list
+  $ box-u-ext files:collaborations:list
 
 EXAMPLE
   box files:collaborations 11111
 ```
 
-_See code: [src/commands/files/collaborations/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/collaborations/index.js)_
+_See code: [src/commands/files/collaborations/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/collaborations/index.js)_
 
-## `box files:collaborations:add ID`
+## `box-u-ext files:collaborations:add ID`
 
 Create a collaboration for a file
 
 ```
 USAGE
-  $ box files:collaborations:add ID
+  $ box-u-ext files:collaborations:add ID
 
 ARGUMENTS
   ID  ID of the file to add a collaboration to
@@ -144,15 +144,15 @@ EXAMPLE
   box files:collaborations:add 11111 --role editor --user-id 22222
 ```
 
-_See code: [src/commands/files/collaborations/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/collaborations/add.js)_
+_See code: [src/commands/files/collaborations/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/collaborations/add.js)_
 
-## `box files:comments ID`
+## `box-u-ext files:comments ID`
 
 List all comments on a file
 
 ```
 USAGE
-  $ box files:comments ID
+  $ box-u-ext files:comments ID
 
 ARGUMENTS
   ID  ID of the file to get comments for
@@ -173,21 +173,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box comments:list
+  $ box-u-ext comments:list
 
 EXAMPLE
   box files:comments 11111
 ```
 
-_See code: [src/commands/files/comments.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/comments.js)_
+_See code: [src/commands/files/comments.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/comments.js)_
 
-## `box files:copy ID PARENTID`
+## `box-u-ext files:copy ID PARENTID`
 
 Copy a file to a different folder
 
 ```
 USAGE
-  $ box files:copy ID PARENTID
+  $ box-u-ext files:copy ID PARENTID
 
 ARGUMENTS
   ID        ID of the file to copy
@@ -215,15 +215,15 @@ EXAMPLE
   box files:copy 11111 22222
 ```
 
-_See code: [src/commands/files/copy.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/copy.js)_
+_See code: [src/commands/files/copy.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/copy.js)_
 
-## `box files:delete ID`
+## `box-u-ext files:delete ID`
 
 Delete a file
 
 ```
 USAGE
-  $ box files:delete ID
+  $ box-u-ext files:delete ID
 
 ARGUMENTS
   ID  ID of the file to delete
@@ -249,15 +249,15 @@ EXAMPLE
   box files:delete 11111
 ```
 
-_See code: [src/commands/files/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/delete.js)_
+_See code: [src/commands/files/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/delete.js)_
 
-## `box files:download ID`
+## `box-u-ext files:download ID`
 
 Download a file
 
 ```
 USAGE
-  $ box files:download ID
+  $ box-u-ext files:download ID
 
 ARGUMENTS
   ID  ID of the file to download
@@ -286,15 +286,15 @@ EXAMPLE
   box files:download 11111 --destination /path/to/destinationFolder
 ```
 
-_See code: [src/commands/files/download.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/download.js)_
+_See code: [src/commands/files/download.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/download.js)_
 
-## `box files:get ID`
+## `box-u-ext files:get ID`
 
 Get information about a file
 
 ```
 USAGE
-  $ box files:get ID
+  $ box-u-ext files:get ID
 
 ARGUMENTS
   ID  ID of the file to get
@@ -318,15 +318,15 @@ EXAMPLE
   box files:get 11111
 ```
 
-_See code: [src/commands/files/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/get.js)_
+_See code: [src/commands/files/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/get.js)_
 
-## `box files:lock ID`
+## `box-u-ext files:lock ID`
 
 Lock a file
 
 ```
 USAGE
-  $ box files:lock ID
+  $ box-u-ext files:lock ID
 
 ARGUMENTS
   ID  ID of file to lock
@@ -357,21 +357,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:update-lock
+  $ box-u-ext files:update-lock
 
 EXAMPLE
   box files:lock 11111
 ```
 
-_See code: [src/commands/files/lock.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/lock.js)_
+_See code: [src/commands/files/lock.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/lock.js)_
 
-## `box files:metadata ID`
+## `box-u-ext files:metadata ID`
 
 Get all metadata on a file
 
 ```
 USAGE
-  $ box files:metadata ID
+  $ box-u-ext files:metadata ID
 
 ARGUMENTS
   ID  Id of the file
@@ -392,21 +392,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:metadata:get-all
+  $ box-u-ext files:metadata:get-all
 
 EXAMPLE
   box files:metadata 11111
 ```
 
-_See code: [src/commands/files/metadata/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/index.js)_
+_See code: [src/commands/files/metadata/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/index.js)_
 
-## `box files:metadata:add ID`
+## `box-u-ext files:metadata:add ID`
 
 Add metadata to a file
 
 ```
 USAGE
-  $ box files:metadata:add ID
+  $ box-u-ext files:metadata:add ID
 
 ARGUMENTS
   ID  ID of the file to add metadata to
@@ -438,21 +438,21 @@ OPTIONS
   --template-key=template-key            (required) The key of the metadata template to use
 
 ALIASES
-  $ box files:metadata:create
+  $ box-u-ext files:metadata:create
 
 EXAMPLE
   box files:metadata:add 11111 --template-key employeeRecord --data "name=John Doe" --data department=Sales
 ```
 
-_See code: [src/commands/files/metadata/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/add.js)_
+_See code: [src/commands/files/metadata/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/add.js)_
 
-## `box files:metadata:get ID`
+## `box-u-ext files:metadata:get ID`
 
 Get information about a metadata object
 
 ```
 USAGE
-  $ box files:metadata:get ID
+  $ box-u-ext files:metadata:get ID
 
 ARGUMENTS
   ID  ID of the file to get metadata on
@@ -478,15 +478,15 @@ EXAMPLE
   box files:metadata:get 11111 --template-key employeeRecord
 ```
 
-_See code: [src/commands/files/metadata/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/get.js)_
+_See code: [src/commands/files/metadata/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/get.js)_
 
-## `box files:metadata:remove ID`
+## `box-u-ext files:metadata:remove ID`
 
 Delete metadata from a file
 
 ```
 USAGE
-  $ box files:metadata:remove ID
+  $ box-u-ext files:metadata:remove ID
 
 ARGUMENTS
   ID  ID of the file to remove metadata from
@@ -509,21 +509,21 @@ OPTIONS
   --template-key=template-key            (required) The key of the metadata template to remove
 
 ALIASES
-  $ box files:metadata:delete
+  $ box-u-ext files:metadata:delete
 
 EXAMPLE
   box files:metadata:remove 11111 --scope global --template-key properties
 ```
 
-_See code: [src/commands/files/metadata/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/remove.js)_
+_See code: [src/commands/files/metadata/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/remove.js)_
 
-## `box files:metadata:set ID`
+## `box-u-ext files:metadata:set ID`
 
 Set metadata on a file
 
 ```
 USAGE
-  $ box files:metadata:set ID
+  $ box-u-ext files:metadata:set ID
 
 ARGUMENTS
   ID  ID of the file to add metadata to
@@ -558,15 +558,15 @@ EXAMPLE
   box files:metadata:set 11111 --template-key employeeRecord --data "name=John Doe" --data department=Sales
 ```
 
-_See code: [src/commands/files/metadata/set.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/set.js)_
+_See code: [src/commands/files/metadata/set.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/set.js)_
 
-## `box files:metadata:update ID`
+## `box-u-ext files:metadata:update ID`
 
 Update the metadata attached to a file
 
 ```
 USAGE
-  $ box files:metadata:update ID
+  $ box-u-ext files:metadata:update ID
 
 ARGUMENTS
   ID  ID of the file to update metadata on
@@ -621,15 +621,15 @@ EXAMPLE
   box files:metadata:update 11111 --template-key employeeRecord --replace department=Finance
 ```
 
-_See code: [src/commands/files/metadata/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/metadata/update.js)_
+_See code: [src/commands/files/metadata/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/metadata/update.js)_
 
-## `box files:move ID PARENTID`
+## `box-u-ext files:move ID PARENTID`
 
 Move a file to a different folder
 
 ```
 USAGE
-  $ box files:move ID PARENTID
+  $ box-u-ext files:move ID PARENTID
 
 ARGUMENTS
   ID        ID of the file to move
@@ -655,15 +655,15 @@ EXAMPLE
   box files:move 11111 22222
 ```
 
-_See code: [src/commands/files/move.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/move.js)_
+_See code: [src/commands/files/move.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/move.js)_
 
-## `box files:rename ID NAME`
+## `box-u-ext files:rename ID NAME`
 
 Rename a file
 
 ```
 USAGE
-  $ box files:rename ID NAME
+  $ box-u-ext files:rename ID NAME
 
 ARGUMENTS
   ID    ID of file to rename
@@ -690,15 +690,15 @@ EXAMPLE
   box files:rename 11111 "New File Name.pdf"
 ```
 
-_See code: [src/commands/files/rename.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/rename.js)_
+_See code: [src/commands/files/rename.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/rename.js)_
 
-## `box files:share ID`
+## `box-u-ext files:share ID`
 
 Create a shared link for a file
 
 ```
 USAGE
-  $ box files:share ID
+  $ box-u-ext files:share ID
 
 ARGUMENTS
   ID  ID of the file to share
@@ -731,22 +731,22 @@ OPTIONS
                                          hyphens.
 
 ALIASES
-  $ box files:shared-links:create
-  $ box files:shared-links:update
+  $ box-u-ext files:shared-links:create
+  $ box-u-ext files:shared-links:update
 
 EXAMPLE
   box files:share 11111 --access company --vanity-name my-custom-name-123
 ```
 
-_See code: [src/commands/files/share.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/share.js)_
+_See code: [src/commands/files/share.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/share.js)_
 
-## `box files:tasks ID`
+## `box-u-ext files:tasks ID`
 
 List all tasks on this file
 
 ```
 USAGE
-  $ box files:tasks ID
+  $ box-u-ext files:tasks ID
 
 ARGUMENTS
   ID  ID of file on which to retrieve tasks
@@ -767,21 +767,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:tasks:list
+  $ box-u-ext files:tasks:list
 
 EXAMPLE
   box files:tasks 11111
 ```
 
-_See code: [src/commands/files/tasks/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/tasks/index.js)_
+_See code: [src/commands/files/tasks/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/tasks/index.js)_
 
-## `box files:unlock ID`
+## `box-u-ext files:unlock ID`
 
 Unlock a file
 
 ```
 USAGE
-  $ box files:unlock ID
+  $ box-u-ext files:unlock ID
 
 ARGUMENTS
   ID  Id of file to unlock
@@ -805,15 +805,15 @@ EXAMPLE
   box files:unlock 11111
 ```
 
-_See code: [src/commands/files/unlock.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/unlock.js)_
+_See code: [src/commands/files/unlock.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/unlock.js)_
 
-## `box files:unshare ID`
+## `box-u-ext files:unshare ID`
 
 Delete a shared link for a file
 
 ```
 USAGE
-  $ box files:unshare ID
+  $ box-u-ext files:unshare ID
 
 ARGUMENTS
   ID  ID of the file to unshare
@@ -834,21 +834,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:shared-links:delete
+  $ box-u-ext files:shared-links:delete
 
 EXAMPLE
   box files:unshare 11111
 ```
 
-_See code: [src/commands/files/unshare.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/unshare.js)_
+_See code: [src/commands/files/unshare.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/unshare.js)_
 
-## `box files:update ID`
+## `box-u-ext files:update ID`
 
 Update a file record
 
 ```
 USAGE
-  $ box files:update ID
+  $ box-u-ext files:update ID
 
 ARGUMENTS
   ID  ID of the file to update
@@ -886,15 +886,15 @@ EXAMPLE
   box files:update 11111 --name "New File Name.pdf"
 ```
 
-_See code: [src/commands/files/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/update.js)_
+_See code: [src/commands/files/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/update.js)_
 
-## `box files:upload PATH`
+## `box-u-ext files:upload PATH`
 
 Upload a file
 
 ```
 USAGE
-  $ box files:upload PATH
+  $ box-u-ext files:upload PATH
 
 ARGUMENTS
   PATH  Path to the file to be uploaded
@@ -942,15 +942,15 @@ EXAMPLE
   box files:upload /path/to/file.pdf --parent-id 22222
 ```
 
-_See code: [src/commands/files/upload.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/upload.js)_
+_See code: [src/commands/files/upload.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/upload.js)_
 
-## `box files:versions FILEID`
+## `box-u-ext files:versions FILEID`
 
 Get a list of file versions
 
 ```
 USAGE
-  $ box files:versions FILEID
+  $ box-u-ext files:versions FILEID
 
 ARGUMENTS
   FILEID  ID of file to get versions for
@@ -978,21 +978,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:versions:list
+  $ box-u-ext files:versions:list
 
 EXAMPLE
   box files:versions 11111
 ```
 
-_See code: [src/commands/files/versions/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/versions/index.js)_
+_See code: [src/commands/files/versions/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/versions/index.js)_
 
-## `box files:versions:delete FILEID FILEVERSIONID`
+## `box-u-ext files:versions:delete FILEID FILEVERSIONID`
 
 Delete a file version
 
 ```
 USAGE
-  $ box files:versions:delete FILEID FILEVERSIONID
+  $ box-u-ext files:versions:delete FILEID FILEVERSIONID
 
 ARGUMENTS
   FILEID         ID of the file to get versions for
@@ -1018,15 +1018,15 @@ EXAMPLE
   box files:versions:delete 11111 55555
 ```
 
-_See code: [src/commands/files/versions/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/versions/delete.js)_
+_See code: [src/commands/files/versions/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/versions/delete.js)_
 
-## `box files:versions:download FILEID FILEVERSIONID`
+## `box-u-ext files:versions:download FILEID FILEVERSIONID`
 
 Download a specific version of a file
 
 ```
 USAGE
-  $ box files:versions:download FILEID FILEVERSIONID
+  $ box-u-ext files:versions:download FILEID FILEVERSIONID
 
 ARGUMENTS
   FILEID         ID of the file to download
@@ -1055,15 +1055,15 @@ EXAMPLE
   box files:versions:download 11111 55555
 ```
 
-_See code: [src/commands/files/versions/download.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/versions/download.js)_
+_See code: [src/commands/files/versions/download.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/versions/download.js)_
 
-## `box files:versions:promote FILEID FILEVERSIONID`
+## `box-u-ext files:versions:promote FILEID FILEVERSIONID`
 
 Promote a file version
 
 ```
 USAGE
-  $ box files:versions:promote FILEID FILEVERSIONID
+  $ box-u-ext files:versions:promote FILEID FILEVERSIONID
 
 ARGUMENTS
   FILEID         ID of the file to get versions for
@@ -1088,15 +1088,15 @@ EXAMPLE
   box files:versions:promote 11111 55555
 ```
 
-_See code: [src/commands/files/versions/promote.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/versions/promote.js)_
+_See code: [src/commands/files/versions/promote.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/versions/promote.js)_
 
-## `box files:versions:upload FILEID PATH`
+## `box-u-ext files:versions:upload FILEID PATH`
 
 Upload a new version of a file
 
 ```
 USAGE
-  $ box files:versions:upload FILEID PATH
+  $ box-u-ext files:versions:upload FILEID PATH
 
 ARGUMENTS
   FILEID  ID of the file to upload a new version of
@@ -1130,15 +1130,15 @@ EXAMPLE
   box files:versions:upload 11111 /path/to/file.pdf
 ```
 
-_See code: [src/commands/files/versions/upload.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/versions/upload.js)_
+_See code: [src/commands/files/versions/upload.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/versions/upload.js)_
 
-## `box files:zip NAME`
+## `box-u-ext files:zip NAME`
 
 Create a zip of multiple files and folders and download it
 
 ```
 USAGE
-  $ box files:zip NAME
+  $ box-u-ext files:zip NAME
 
 ARGUMENTS
   NAME  Name of the zip to be created and downloaded
@@ -1172,4 +1172,4 @@ EXAMPLE
   box files:zip sample_file.zip --item=file:12421 --item=folder:48291
 ```
 
-_See code: [src/commands/files/zip.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/files/zip.js)_
+_See code: [src/commands/files/zip.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/files/zip.js)_

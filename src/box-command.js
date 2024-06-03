@@ -85,7 +85,8 @@ const SDK_CONFIG = Object.freeze({
 	},
 });
 
-const CONFIG_FOLDER_PATH = path.join(os.homedir(), '.box');
+const CONFIG_FOLDER_PATH = path.join(os.homedir(), '.box-u-ext');
+// const CONFIG_FOLDER_PATH = path.join(os.homedir(), '.box');
 const SETTINGS_FILE_PATH = path.join(CONFIG_FOLDER_PATH, 'settings.json');
 const ENVIRONMENTS_FILE_PATH = path.join(
 	CONFIG_FOLDER_PATH,

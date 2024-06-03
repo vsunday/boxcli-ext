@@ -1,20 +1,20 @@
-`box integration-mappings`
-==========================
+`box-u-ext integration-mappings`
+================================
 
 List Slack integration mappings
 
-* [`box integration-mappings:slack`](#box-integration-mappingsslack)
-* [`box integration-mappings:slack:create BOXITEMID CHANNELID`](#box-integration-mappingsslackcreate-boxitemid-channelid)
-* [`box integration-mappings:slack:delete ID`](#box-integration-mappingsslackdelete-id)
-* [`box integration-mappings:slack:update ID`](#box-integration-mappingsslackupdate-id)
+* [`box-u-ext integration-mappings:slack`](#box-u-ext-integration-mappingsslack)
+* [`box-u-ext integration-mappings:slack:create BOXITEMID CHANNELID`](#box-u-ext-integration-mappingsslackcreate-boxitemid-channelid)
+* [`box-u-ext integration-mappings:slack:delete ID`](#box-u-ext-integration-mappingsslackdelete-id)
+* [`box-u-ext integration-mappings:slack:update ID`](#box-u-ext-integration-mappingsslackupdate-id)
 
-## `box integration-mappings:slack`
+## `box-u-ext integration-mappings:slack`
 
 List Slack integration mappings
 
 ```
 USAGE
-  $ box integration-mappings:slack
+  $ box-u-ext integration-mappings:slack
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -43,22 +43,22 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box integration-mappings:slack:list
+  $ box-u-ext integration-mappings:slack:list
 
 EXAMPLES
   box integration-mappings:slack --partner-item-id 123 --manually-created
   box integration-mappings:slack --box-item-id 456 --no-manually-created
 ```
 
-_See code: [src/commands/integration-mappings/slack/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/integration-mappings/slack/index.js)_
+_See code: [src/commands/integration-mappings/slack/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/integration-mappings/slack/index.js)_
 
-## `box integration-mappings:slack:create BOXITEMID CHANNELID`
+## `box-u-ext integration-mappings:slack:create BOXITEMID CHANNELID`
 
 Create Slack integration mapping
 
 ```
 USAGE
-  $ box integration-mappings:slack:create BOXITEMID CHANNELID
+  $ box-u-ext integration-mappings:slack:create BOXITEMID CHANNELID
 
 ARGUMENTS
   BOXITEMID  ID of the mapped folder
@@ -96,15 +96,15 @@ EXAMPLES
   box integration-mappings:slack:create 123 AB89X56Y --slack-workspace-id 999 --disable-access-management
 ```
 
-_See code: [src/commands/integration-mappings/slack/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/integration-mappings/slack/create.js)_
+_See code: [src/commands/integration-mappings/slack/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/integration-mappings/slack/create.js)_
 
-## `box integration-mappings:slack:delete ID`
+## `box-u-ext integration-mappings:slack:delete ID`
 
 Delete Slack integration mapping
 
 ```
 USAGE
-  $ box integration-mappings:slack:delete ID
+  $ box-u-ext integration-mappings:slack:delete ID
 
 ARGUMENTS
   ID  ID of the integration mapping
@@ -128,15 +128,15 @@ EXAMPLE
   box integration-mappings:slack:delete 123
 ```
 
-_See code: [src/commands/integration-mappings/slack/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/integration-mappings/slack/delete.js)_
+_See code: [src/commands/integration-mappings/slack/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/integration-mappings/slack/delete.js)_
 
-## `box integration-mappings:slack:update ID`
+## `box-u-ext integration-mappings:slack:update ID`
 
 Update Slack integration mapping
 
 ```
 USAGE
-  $ box integration-mappings:slack:update ID
+  $ box-u-ext integration-mappings:slack:update ID
 
 ARGUMENTS
   ID  ID of an integration mapping
@@ -169,4 +169,4 @@ EXAMPLE
   box integration-mappings:slack:update 123 --box-item-id 789 --disable-access-management
 ```
 
-_See code: [src/commands/integration-mappings/slack/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/integration-mappings/slack/update.js)_
+_See code: [src/commands/integration-mappings/slack/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/integration-mappings/slack/update.js)_

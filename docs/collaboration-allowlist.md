@@ -1,24 +1,24 @@
-`box collaboration-allowlist`
-=============================
+`box-u-ext collaboration-allowlist`
+===================================
 
 List collaboration allowlist entries
 
-* [`box collaboration-allowlist`](#box-collaboration-allowlist)
-* [`box collaboration-allowlist:add DOMAIN`](#box-collaboration-allowlistadd-domain)
-* [`box collaboration-allowlist:delete ID`](#box-collaboration-allowlistdelete-id)
-* [`box collaboration-allowlist:exemptions`](#box-collaboration-allowlistexemptions)
-* [`box collaboration-allowlist:exemptions:create USERID`](#box-collaboration-allowlistexemptionscreate-userid)
-* [`box collaboration-allowlist:exemptions:delete ID`](#box-collaboration-allowlistexemptionsdelete-id)
-* [`box collaboration-allowlist:exemptions:get ID`](#box-collaboration-allowlistexemptionsget-id)
-* [`box collaboration-allowlist:get ID`](#box-collaboration-allowlistget-id)
+* [`box-u-ext collaboration-allowlist`](#box-u-ext-collaboration-allowlist)
+* [`box-u-ext collaboration-allowlist:add DOMAIN`](#box-u-ext-collaboration-allowlistadd-domain)
+* [`box-u-ext collaboration-allowlist:delete ID`](#box-u-ext-collaboration-allowlistdelete-id)
+* [`box-u-ext collaboration-allowlist:exemptions`](#box-u-ext-collaboration-allowlistexemptions)
+* [`box-u-ext collaboration-allowlist:exemptions:create USERID`](#box-u-ext-collaboration-allowlistexemptionscreate-userid)
+* [`box-u-ext collaboration-allowlist:exemptions:delete ID`](#box-u-ext-collaboration-allowlistexemptionsdelete-id)
+* [`box-u-ext collaboration-allowlist:exemptions:get ID`](#box-u-ext-collaboration-allowlistexemptionsget-id)
+* [`box-u-ext collaboration-allowlist:get ID`](#box-u-ext-collaboration-allowlistget-id)
 
-## `box collaboration-allowlist`
+## `box-u-ext collaboration-allowlist`
 
 List collaboration allowlist entries
 
 ```
 USAGE
-  $ box collaboration-allowlist
+  $ box-u-ext collaboration-allowlist
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -46,15 +46,15 @@ EXAMPLE
   box collaboration-allowlist
 ```
 
-_See code: [src/commands/collaboration-allowlist/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/index.js)_
+_See code: [src/commands/collaboration-allowlist/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/index.js)_
 
-## `box collaboration-allowlist:add DOMAIN`
+## `box-u-ext collaboration-allowlist:add DOMAIN`
 
 Add a collaboration allowlist entry
 
 ```
 USAGE
-  $ box collaboration-allowlist:add DOMAIN
+  $ box-u-ext collaboration-allowlist:add DOMAIN
 
 ARGUMENTS
   DOMAIN  Domain to add to allowlist (e.g. box.com)
@@ -79,15 +79,15 @@ EXAMPLE
   box collaboration-allowlist:add example.com --direction outbound
 ```
 
-_See code: [src/commands/collaboration-allowlist/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/add.js)_
+_See code: [src/commands/collaboration-allowlist/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/add.js)_
 
-## `box collaboration-allowlist:delete ID`
+## `box-u-ext collaboration-allowlist:delete ID`
 
 Delete a collaboration allowlist entry
 
 ```
 USAGE
-  $ box collaboration-allowlist:delete ID
+  $ box-u-ext collaboration-allowlist:delete ID
 
 ARGUMENTS
   ID  ID of the collaboration allowlist entry record to delete
@@ -111,15 +111,15 @@ EXAMPLE
   box collaboration-allowlist:delete 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/delete.js)_
+_See code: [src/commands/collaboration-allowlist/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/delete.js)_
 
-## `box collaboration-allowlist:exemptions`
+## `box-u-ext collaboration-allowlist:exemptions`
 
 List collaboration allowlist exemptions
 
 ```
 USAGE
-  $ box collaboration-allowlist:exemptions
+  $ box-u-ext collaboration-allowlist:exemptions
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -147,15 +147,15 @@ EXAMPLE
   box collaboration-allowlist:exemptions
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/exemptions/index.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/exemptions/index.js)_
 
-## `box collaboration-allowlist:exemptions:create USERID`
+## `box-u-ext collaboration-allowlist:exemptions:create USERID`
 
 Exempt a user from the collaboration allowlist
 
 ```
 USAGE
-  $ box collaboration-allowlist:exemptions:create USERID
+  $ box-u-ext collaboration-allowlist:exemptions:create USERID
 
 ARGUMENTS
   USERID  ID of the user to exempt from the collaboration allowlist
@@ -179,15 +179,15 @@ EXAMPLE
   box collaboration-allowlist:exemptions:create 11111
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/exemptions/create.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/exemptions/create.js)_
 
-## `box collaboration-allowlist:exemptions:delete ID`
+## `box-u-ext collaboration-allowlist:exemptions:delete ID`
 
 Delete a collaboration allowlist exemption
 
 ```
 USAGE
-  $ box collaboration-allowlist:exemptions:delete ID
+  $ box-u-ext collaboration-allowlist:exemptions:delete ID
 
 ARGUMENTS
   ID  ID of the allowlist exemption record to delete
@@ -211,15 +211,15 @@ EXAMPLE
   box collaboration-allowlist:exemptions:delete 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/exemptions/delete.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/exemptions/delete.js)_
 
-## `box collaboration-allowlist:exemptions:get ID`
+## `box-u-ext collaboration-allowlist:exemptions:get ID`
 
 Get a collaboration allowlist exemption
 
 ```
 USAGE
-  $ box collaboration-allowlist:exemptions:get ID
+  $ box-u-ext collaboration-allowlist:exemptions:get ID
 
 ARGUMENTS
   ID  ID of the allowlist exemption record to get
@@ -243,15 +243,15 @@ EXAMPLE
   box collaboration-allowlist:exemptions:get 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/exemptions/get.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/exemptions/get.js)_
 
-## `box collaboration-allowlist:get ID`
+## `box-u-ext collaboration-allowlist:get ID`
 
 Get a collaboration allowlist entry
 
 ```
 USAGE
-  $ box collaboration-allowlist:get ID
+  $ box-u-ext collaboration-allowlist:get ID
 
 ARGUMENTS
   ID  ID of the collaboration allowlist entry record to get
@@ -275,4 +275,4 @@ EXAMPLE
   box collaboration-allowlist:get 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaboration-allowlist/get.js)_
+_See code: [src/commands/collaboration-allowlist/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaboration-allowlist/get.js)_

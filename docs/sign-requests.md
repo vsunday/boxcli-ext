@@ -1,21 +1,21 @@
-`box sign-requests`
-===================
+`box-u-ext sign-requests`
+=========================
 
 List sign requests
 
-* [`box sign-requests`](#box-sign-requests)
-* [`box sign-requests:cancel ID`](#box-sign-requestscancel-id)
-* [`box sign-requests:create`](#box-sign-requestscreate)
-* [`box sign-requests:get ID`](#box-sign-requestsget-id)
-* [`box sign-requests:resend ID`](#box-sign-requestsresend-id)
+* [`box-u-ext sign-requests`](#box-u-ext-sign-requests)
+* [`box-u-ext sign-requests:cancel ID`](#box-u-ext-sign-requestscancel-id)
+* [`box-u-ext sign-requests:create`](#box-u-ext-sign-requestscreate)
+* [`box-u-ext sign-requests:get ID`](#box-u-ext-sign-requestsget-id)
+* [`box-u-ext sign-requests:resend ID`](#box-u-ext-sign-requestsresend-id)
 
-## `box sign-requests`
+## `box-u-ext sign-requests`
 
 List sign requests
 
 ```
 USAGE
-  $ box sign-requests
+  $ box-u-ext sign-requests
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -43,15 +43,15 @@ EXAMPLE
   box sign-requests
 ```
 
-_See code: [src/commands/sign-requests/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-requests/index.js)_
+_See code: [src/commands/sign-requests/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-requests/index.js)_
 
-## `box sign-requests:cancel ID`
+## `box-u-ext sign-requests:cancel ID`
 
 Cancel sign request
 
 ```
 USAGE
-  $ box sign-requests:cancel ID
+  $ box-u-ext sign-requests:cancel ID
 
 ARGUMENTS
   ID  The ID of the sign request
@@ -75,15 +75,15 @@ EXAMPLE
   box sign-requests:cancel 12345
 ```
 
-_See code: [src/commands/sign-requests/cancel.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-requests/cancel.js)_
+_See code: [src/commands/sign-requests/cancel.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-requests/cancel.js)_
 
-## `box sign-requests:create`
+## `box-u-ext sign-requests:create`
 
 Create sign request
 
 ```
 USAGE
-  $ box sign-requests:create
+  $ box-u-ext sign-requests:create
 
 OPTIONS
   -h, --help
@@ -182,15 +182,15 @@ EXAMPLE
   id=1,value=Test
 ```
 
-_See code: [src/commands/sign-requests/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-requests/create.js)_
+_See code: [src/commands/sign-requests/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-requests/create.js)_
 
-## `box sign-requests:get ID`
+## `box-u-ext sign-requests:get ID`
 
 Get sign request by ID
 
 ```
 USAGE
-  $ box sign-requests:get ID
+  $ box-u-ext sign-requests:get ID
 
 ARGUMENTS
   ID  The ID of the sign request
@@ -214,15 +214,15 @@ EXAMPLE
   box sign-requests:get 12345
 ```
 
-_See code: [src/commands/sign-requests/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-requests/get.js)_
+_See code: [src/commands/sign-requests/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-requests/get.js)_
 
-## `box sign-requests:resend ID`
+## `box-u-ext sign-requests:resend ID`
 
 Resend sign request
 
 ```
 USAGE
-  $ box sign-requests:resend ID
+  $ box-u-ext sign-requests:resend ID
 
 ARGUMENTS
   ID  The ID of the sign request
@@ -246,4 +246,4 @@ EXAMPLE
   box sign-requests:resend 12345
 ```
 
-_See code: [src/commands/sign-requests/resend.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-requests/resend.js)_
+_See code: [src/commands/sign-requests/resend.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-requests/resend.js)_

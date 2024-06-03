@@ -1,29 +1,31 @@
-`box users`
-===========
+`box-u-ext users`
+=================
 
 List all Box users
 
-* [`box users`](#box-users)
-* [`box users:create NAME [LOGIN]`](#box-userscreate-name-login)
-* [`box users:delete ID`](#box-usersdelete-id)
-* [`box users:email-aliases USERID`](#box-usersemail-aliases-userid)
-* [`box users:email-aliases:add USERID EMAIL`](#box-usersemail-aliasesadd-userid-email)
-* [`box users:email-aliases:remove USERID ALIASID`](#box-usersemail-aliasesremove-userid-aliasid)
-* [`box users:get [ID]`](#box-usersget-id)
-* [`box users:groups ID`](#box-usersgroups-id)
-* [`box users:invite EMAIL ENTERPRISEID`](#box-usersinvite-email-enterpriseid)
-* [`box users:search NAME`](#box-userssearch-name)
-* [`box users:terminate-session`](#box-usersterminate-session)
-* [`box users:transfer-content USERID NEWUSERID`](#box-userstransfer-content-userid-newuserid)
-* [`box users:update ID`](#box-usersupdate-id)
+* [`box-u-ext users`](#box-u-ext-users)
+* [`box-u-ext users:add-collabs ID EMAILADDRESS`](#box-u-ext-usersadd-collabs-id-emailaddress)
+* [`box-u-ext users:create NAME [LOGIN]`](#box-u-ext-userscreate-name-login)
+* [`box-u-ext users:delete ID`](#box-u-ext-usersdelete-id)
+* [`box-u-ext users:email-aliases USERID`](#box-u-ext-usersemail-aliases-userid)
+* [`box-u-ext users:email-aliases:add USERID EMAIL`](#box-u-ext-usersemail-aliasesadd-userid-email)
+* [`box-u-ext users:email-aliases:remove USERID ALIASID`](#box-u-ext-usersemail-aliasesremove-userid-aliasid)
+* [`box-u-ext users:get [ID]`](#box-u-ext-usersget-id)
+* [`box-u-ext users:groups ID`](#box-u-ext-usersgroups-id)
+* [`box-u-ext users:invite EMAIL ENTERPRISEID`](#box-u-ext-usersinvite-email-enterpriseid)
+* [`box-u-ext users:search NAME`](#box-u-ext-userssearch-name)
+* [`box-u-ext users:take-ownership ID`](#box-u-ext-userstake-ownership-id)
+* [`box-u-ext users:terminate-session`](#box-u-ext-usersterminate-session)
+* [`box-u-ext users:transfer-content USERID NEWUSERID`](#box-u-ext-userstransfer-content-userid-newuserid)
+* [`box-u-ext users:update ID`](#box-u-ext-usersupdate-id)
 
-## `box users`
+## `box-u-ext users`
 
 List all Box users
 
 ```
 USAGE
-  $ box users
+  $ box-u-ext users
 
 OPTIONS
   -a, --all-users                        Results from all users
@@ -53,21 +55,54 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:list
+  $ box-u-ext users:list
 
 EXAMPLE
   box users
 ```
 
-_See code: [src/commands/users/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/index.js)_
+_See code: [src/commands/users/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/index.js)_
 
-## `box users:create NAME [LOGIN]`
+## `box-u-ext users:add-collabs ID EMAILADDRESS`
+
+Invite former owners to their respective folders
+
+```
+USAGE
+  $ box-u-ext users:add-collabs ID EMAILADDRESS
+
+ARGUMENTS
+  ID            User ID
+  EMAILADDRESS  Email address of collaborator
+
+OPTIONS
+  -h, --help                             Show CLI help
+  -q, --quiet                            Suppress any non-error output to stderr
+  -s, --save                             Save report to default reports folder on disk
+  -t, --token=token                      Provide a token to perform this call
+  -v, --verbose                          Show verbose output, which can be helpful for debugging
+  -y, --yes                              Automatically respond yes to all confirmation prompts
+  --as-user=as-user                      Provide an ID for a user
+  --bulk-file-path=bulk-file-path        File path to bulk .csv or .json objects
+  --csv                                  Output formatted CSV
+  --fields=fields                        Comma separated list of fields to show
+  --json                                 Output formatted JSON
+  --no-color                             Turn off colors for logging
+  --save-to-file-path=save-to-file-path  Override default file path to save report
+
+EXAMPLE
+  box users:add-collabs 22222 jdoe@example.com
+```
+
+_See code: [src/commands/users/add-collabs.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/add-collabs.js)_
+
+## `box-u-ext users:create NAME [LOGIN]`
 
 Create a new Box User
 
 ```
 USAGE
-  $ box users:create NAME [LOGIN]
+  $ box-u-ext users:create NAME [LOGIN]
 
 ARGUMENTS
   NAME   The user's name
@@ -150,15 +185,15 @@ EXAMPLE
   box users:create "John Doe" jdoe@example.com
 ```
 
-_See code: [src/commands/users/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/create.js)_
+_See code: [src/commands/users/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/create.js)_
 
-## `box users:delete ID`
+## `box-u-ext users:delete ID`
 
 Delete a Box User
 
 ```
 USAGE
-  $ box users:delete ID
+  $ box-u-ext users:delete ID
 
 ARGUMENTS
   ID  User ID to delete
@@ -184,15 +219,15 @@ EXAMPLE
   box users:delete 33333
 ```
 
-_See code: [src/commands/users/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/delete.js)_
+_See code: [src/commands/users/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/delete.js)_
 
-## `box users:email-aliases USERID`
+## `box-u-ext users:email-aliases USERID`
 
 Get all Email Aliases for a User
 
 ```
 USAGE
-  $ box users:email-aliases USERID
+  $ box-u-ext users:email-aliases USERID
 
 ARGUMENTS
   USERID  User ID to get email aliases for
@@ -213,21 +248,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:get-email-aliases
+  $ box-u-ext users:get-email-aliases
 
 EXAMPLE
   box users:email-aliases 33333
 ```
 
-_See code: [src/commands/users/email-aliases/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/email-aliases/index.js)_
+_See code: [src/commands/users/email-aliases/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/index.js)_
 
-## `box users:email-aliases:add USERID EMAIL`
+## `box-u-ext users:email-aliases:add USERID EMAIL`
 
 Add a new email alias to a user
 
 ```
 USAGE
-  $ box users:email-aliases:add USERID EMAIL
+  $ box-u-ext users:email-aliases:add USERID EMAIL
 
 ARGUMENTS
   USERID  User ID to add email alias
@@ -257,21 +292,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:add-email-alias
+  $ box-u-ext users:add-email-alias
 
 EXAMPLE
   box users:email-aliases:add 33333 user+alias@example.com
 ```
 
-_See code: [src/commands/users/email-aliases/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/email-aliases/add.js)_
+_See code: [src/commands/users/email-aliases/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/add.js)_
 
-## `box users:email-aliases:remove USERID ALIASID`
+## `box-u-ext users:email-aliases:remove USERID ALIASID`
 
 Delete an email alias from a user
 
 ```
 USAGE
-  $ box users:email-aliases:remove USERID ALIASID
+  $ box-u-ext users:email-aliases:remove USERID ALIASID
 
 ARGUMENTS
   USERID   User ID to get email aliases
@@ -293,21 +328,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:delete-email-alias
+  $ box-u-ext users:delete-email-alias
 
 EXAMPLE
   box users:email-aliases:remove 33333 12345
 ```
 
-_See code: [src/commands/users/email-aliases/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/email-aliases/remove.js)_
+_See code: [src/commands/users/email-aliases/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/email-aliases/remove.js)_
 
-## `box users:get [ID]`
+## `box-u-ext users:get [ID]`
 
 Get information about a Box user
 
 ```
 USAGE
-  $ box users:get [ID]
+  $ box-u-ext users:get [ID]
 
 ARGUMENTS
   ID  [default: me] ID of the user to get; defaults to the current user
@@ -331,15 +366,15 @@ EXAMPLE
   box users:get 33333
 ```
 
-_See code: [src/commands/users/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/get.js)_
+_See code: [src/commands/users/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/get.js)_
 
-## `box users:groups ID`
+## `box-u-ext users:groups ID`
 
 List groups a user belongs to
 
 ```
 USAGE
-  $ box users:groups ID
+  $ box-u-ext users:groups ID
 
 ARGUMENTS
   ID  ID of the user to get groups for
@@ -367,21 +402,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:list-groups
+  $ box-u-ext users:list-groups
 
 EXAMPLE
   box users:groups 33333
 ```
 
-_See code: [src/commands/users/groups.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/groups.js)_
+_See code: [src/commands/users/groups.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/groups.js)_
 
-## `box users:invite EMAIL ENTERPRISEID`
+## `box-u-ext users:invite EMAIL ENTERPRISEID`
 
 Invite an Existing Box User to Your Enterprise
 
 ```
 USAGE
-  $ box users:invite EMAIL ENTERPRISEID
+  $ box-u-ext users:invite EMAIL ENTERPRISEID
 
 ARGUMENTS
   EMAIL         Email address of the user to invite
@@ -403,21 +438,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:invite-user
+  $ box-u-ext users:invite-user
 
 EXAMPLE
   box users:invite user@example.com 12345
 ```
 
-_See code: [src/commands/users/invite.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/invite.js)_
+_See code: [src/commands/users/invite.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/invite.js)_
 
-## `box users:search NAME`
+## `box-u-ext users:search NAME`
 
 Search for Box users
 
 ```
 USAGE
-  $ box users:search NAME
+  $ box-u-ext users:search NAME
 
 ARGUMENTS
   NAME  Name of user to search for
@@ -444,15 +479,47 @@ EXAMPLE
   box users:search "John Doe"
 ```
 
-_See code: [src/commands/users/search.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/search.js)_
+_See code: [src/commands/users/search.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/search.js)_
 
-## `box users:terminate-session`
+## `box-u-ext users:take-ownership ID`
+
+Move a user's root content to current user
+
+```
+USAGE
+  $ box-u-ext users:take-ownership ID
+
+ARGUMENTS
+  ID  User whose content should be moved
+
+OPTIONS
+  -h, --help                             Show CLI help
+  -q, --quiet                            Suppress any non-error output to stderr
+  -s, --save                             Save report to default reports folder on disk
+  -t, --token=token                      Provide a token to perform this call
+  -v, --verbose                          Show verbose output, which can be helpful for debugging
+  -y, --yes                              Automatically respond yes to all confirmation prompts
+  --as-user=as-user                      Provide an ID for a user
+  --bulk-file-path=bulk-file-path        File path to bulk .csv or .json objects
+  --csv                                  Output formatted CSV
+  --fields=fields                        Comma separated list of fields to show
+  --json                                 Output formatted JSON
+  --no-color                             Turn off colors for logging
+  --save-to-file-path=save-to-file-path  Override default file path to save report
+
+EXAMPLE
+  box users:take-ownership 33333
+```
+
+_See code: [src/commands/users/take-ownership.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/take-ownership.js)_
+
+## `box-u-ext users:terminate-session`
 
 Validates the roles and permissions of the user, and creates asynchronous jobs to terminate the user's sessions.
 
 ```
 USAGE
-  $ box users:terminate-session
+  $ box-u-ext users:terminate-session
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -472,21 +539,21 @@ OPTIONS
   --user-logins=user-logins              A list of user logins
 
 ALIASES
-  $ box users:terminate-session
+  $ box-u-ext users:terminate-session
 
 EXAMPLE
   box users:terminate-session --user-ids 123 345 --user-logins abc@example.com def@example.com
 ```
 
-_See code: [src/commands/users/terminate-session.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/terminate-session.js)_
+_See code: [src/commands/users/terminate-session.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/terminate-session.js)_
 
-## `box users:transfer-content USERID NEWUSERID`
+## `box-u-ext users:transfer-content USERID NEWUSERID`
 
 Move a user's root content to another user
 
 ```
 USAGE
-  $ box users:transfer-content USERID NEWUSERID
+  $ box-u-ext users:transfer-content USERID NEWUSERID
 
 ARGUMENTS
   USERID     User whose content should be moved
@@ -509,21 +576,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box users:move-root-content
+  $ box-u-ext users:move-root-content
 
 EXAMPLE
   box users:transfer-content 33333 44444
 ```
 
-_See code: [src/commands/users/transfer-content.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/transfer-content.js)_
+_See code: [src/commands/users/transfer-content.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/transfer-content.js)_
 
-## `box users:update ID`
+## `box-u-ext users:update ID`
 
 Update a Box User
 
 ```
 USAGE
-  $ box users:update ID
+  $ box-u-ext users:update ID
 
 ARGUMENTS
   ID  User ID to update
@@ -611,4 +678,4 @@ EXAMPLE
   box users:update 33333 --status inactive
 ```
 
-_See code: [src/commands/users/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/users/update.js)_
+_See code: [src/commands/users/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/users/update.js)_

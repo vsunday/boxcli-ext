@@ -1,18 +1,18 @@
-`box sign-templates`
-====================
+`box-u-ext sign-templates`
+==========================
 
 List sign templates
 
-* [`box sign-templates`](#box-sign-templates)
-* [`box sign-templates:get ID`](#box-sign-templatesget-id)
+* [`box-u-ext sign-templates`](#box-u-ext-sign-templates)
+* [`box-u-ext sign-templates:get ID`](#box-u-ext-sign-templatesget-id)
 
-## `box sign-templates`
+## `box-u-ext sign-templates`
 
 List sign templates
 
 ```
 USAGE
-  $ box sign-templates
+  $ box-u-ext sign-templates
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -40,15 +40,15 @@ EXAMPLE
   box sign-templates
 ```
 
-_See code: [src/commands/sign-templates/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-templates/index.js)_
+_See code: [src/commands/sign-templates/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-templates/index.js)_
 
-## `box sign-templates:get ID`
+## `box-u-ext sign-templates:get ID`
 
 Get sign template by ID
 
 ```
 USAGE
-  $ box sign-templates:get ID
+  $ box-u-ext sign-templates:get ID
 
 ARGUMENTS
   ID  The ID of the sign template
@@ -72,4 +72,4 @@ EXAMPLE
   box sign-templates:get 12345
 ```
 
-_See code: [src/commands/sign-templates/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/sign-templates/get.js)_
+_See code: [src/commands/sign-templates/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/sign-templates/get.js)_

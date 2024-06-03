@@ -1,39 +1,39 @@
-`box folders`
-=============
+`box-u-ext folders`
+===================
 
 Manage folders
 
-* [`box folders:collaborations ID`](#box-folderscollaborations-id)
-* [`box folders:collaborations:add ID`](#box-folderscollaborationsadd-id)
-* [`box folders:copy ID PARENTID`](#box-folderscopy-id-parentid)
-* [`box folders:create PARENTID NAME`](#box-folderscreate-parentid-name)
-* [`box folders:delete ID`](#box-foldersdelete-id)
-* [`box folders:download ID`](#box-foldersdownload-id)
-* [`box folders:get ID`](#box-foldersget-id)
-* [`box folders:items ID`](#box-foldersitems-id)
-* [`box folders:locks ID`](#box-folderslocks-id)
-* [`box folders:locks:create ID`](#box-folderslockscreate-id)
-* [`box folders:locks:delete ID`](#box-folderslocksdelete-id)
-* [`box folders:metadata ID`](#box-foldersmetadata-id)
-* [`box folders:metadata:add ID`](#box-foldersmetadataadd-id)
-* [`box folders:metadata:get ID`](#box-foldersmetadataget-id)
-* [`box folders:metadata:remove ID`](#box-foldersmetadataremove-id)
-* [`box folders:metadata:set ID`](#box-foldersmetadataset-id)
-* [`box folders:metadata:update ID`](#box-foldersmetadataupdate-id)
-* [`box folders:move ID PARENTID`](#box-foldersmove-id-parentid)
-* [`box folders:rename ID NAME`](#box-foldersrename-id-name)
-* [`box folders:share ID`](#box-foldersshare-id)
-* [`box folders:unshare ID`](#box-foldersunshare-id)
-* [`box folders:update ID`](#box-foldersupdate-id)
-* [`box folders:upload PATH`](#box-foldersupload-path)
+* [`box-u-ext folders:collaborations ID`](#box-u-ext-folderscollaborations-id)
+* [`box-u-ext folders:collaborations:add ID`](#box-u-ext-folderscollaborationsadd-id)
+* [`box-u-ext folders:copy ID PARENTID`](#box-u-ext-folderscopy-id-parentid)
+* [`box-u-ext folders:create PARENTID NAME`](#box-u-ext-folderscreate-parentid-name)
+* [`box-u-ext folders:delete ID`](#box-u-ext-foldersdelete-id)
+* [`box-u-ext folders:download ID`](#box-u-ext-foldersdownload-id)
+* [`box-u-ext folders:get ID`](#box-u-ext-foldersget-id)
+* [`box-u-ext folders:items ID`](#box-u-ext-foldersitems-id)
+* [`box-u-ext folders:locks ID`](#box-u-ext-folderslocks-id)
+* [`box-u-ext folders:locks:create ID`](#box-u-ext-folderslockscreate-id)
+* [`box-u-ext folders:locks:delete ID`](#box-u-ext-folderslocksdelete-id)
+* [`box-u-ext folders:metadata ID`](#box-u-ext-foldersmetadata-id)
+* [`box-u-ext folders:metadata:add ID`](#box-u-ext-foldersmetadataadd-id)
+* [`box-u-ext folders:metadata:get ID`](#box-u-ext-foldersmetadataget-id)
+* [`box-u-ext folders:metadata:remove ID`](#box-u-ext-foldersmetadataremove-id)
+* [`box-u-ext folders:metadata:set ID`](#box-u-ext-foldersmetadataset-id)
+* [`box-u-ext folders:metadata:update ID`](#box-u-ext-foldersmetadataupdate-id)
+* [`box-u-ext folders:move ID PARENTID`](#box-u-ext-foldersmove-id-parentid)
+* [`box-u-ext folders:rename ID NAME`](#box-u-ext-foldersrename-id-name)
+* [`box-u-ext folders:share ID`](#box-u-ext-foldersshare-id)
+* [`box-u-ext folders:unshare ID`](#box-u-ext-foldersunshare-id)
+* [`box-u-ext folders:update ID`](#box-u-ext-foldersupdate-id)
+* [`box-u-ext folders:upload PATH`](#box-u-ext-foldersupload-path)
 
-## `box folders:collaborations ID`
+## `box-u-ext folders:collaborations ID`
 
 List all collaborations on a folder
 
 ```
 USAGE
-  $ box folders:collaborations ID
+  $ box-u-ext folders:collaborations ID
 
 ARGUMENTS
   ID  ID of the folder to get the collaborations on
@@ -54,21 +54,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box folders:collaborations:list
+  $ box-u-ext folders:collaborations:list
 
 EXAMPLE
   box folders:collaborations 22222
 ```
 
-_See code: [src/commands/folders/collaborations/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/collaborations/index.js)_
+_See code: [src/commands/folders/collaborations/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/collaborations/index.js)_
 
-## `box folders:collaborations:add ID`
+## `box-u-ext folders:collaborations:add ID`
 
 Create a collaboration for a folder
 
 ```
 USAGE
-  $ box folders:collaborations:add ID
+  $ box-u-ext folders:collaborations:add ID
 
 ARGUMENTS
   ID  ID of the folder to add a collaboration to
@@ -132,15 +132,15 @@ EXAMPLE
   box folders:collaborations:add 22222 --role editor --user-id 33333
 ```
 
-_See code: [src/commands/folders/collaborations/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/collaborations/add.js)_
+_See code: [src/commands/folders/collaborations/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/collaborations/add.js)_
 
-## `box folders:copy ID PARENTID`
+## `box-u-ext folders:copy ID PARENTID`
 
 Copy a folder to a different folder
 
 ```
 USAGE
-  $ box folders:copy ID PARENTID
+  $ box-u-ext folders:copy ID PARENTID
 
 ARGUMENTS
   ID        ID of the folder to copy
@@ -167,15 +167,15 @@ EXAMPLE
   box folders:copy 22222 44444
 ```
 
-_See code: [src/commands/folders/copy.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/copy.js)_
+_See code: [src/commands/folders/copy.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/copy.js)_
 
-## `box folders:create PARENTID NAME`
+## `box-u-ext folders:create PARENTID NAME`
 
 Create a new folder
 
 ```
 USAGE
-  $ box folders:create PARENTID NAME
+  $ box-u-ext folders:create PARENTID NAME
 
 ARGUMENTS
   PARENTID  ID of parent folder to add new folder to, use '0' for the root folder
@@ -202,15 +202,15 @@ EXAMPLE
   box folders:create 22222 "New Subfolder"
 ```
 
-_See code: [src/commands/folders/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/create.js)_
+_See code: [src/commands/folders/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/create.js)_
 
-## `box folders:delete ID`
+## `box-u-ext folders:delete ID`
 
 Delete a folder
 
 ```
 USAGE
-  $ box folders:delete ID
+  $ box-u-ext folders:delete ID
 
 ARGUMENTS
   ID  ID of the folder to delete
@@ -237,15 +237,15 @@ EXAMPLE
   box folders:delete 22222
 ```
 
-_See code: [src/commands/folders/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/delete.js)_
+_See code: [src/commands/folders/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/delete.js)_
 
-## `box folders:download ID`
+## `box-u-ext folders:download ID`
 
 Download a folder
 
 ```
 USAGE
-  $ box folders:download ID
+  $ box-u-ext folders:download ID
 
 ARGUMENTS
   ID  ID of the folder to download
@@ -274,15 +274,15 @@ EXAMPLE
   box folders:download 22222
 ```
 
-_See code: [src/commands/folders/download.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/download.js)_
+_See code: [src/commands/folders/download.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/download.js)_
 
-## `box folders:get ID`
+## `box-u-ext folders:get ID`
 
 Get information about a folder
 
 ```
 USAGE
-  $ box folders:get ID
+  $ box-u-ext folders:get ID
 
 ARGUMENTS
   ID  ID of folder to get; use 0 for the root folder
@@ -306,15 +306,15 @@ EXAMPLE
   box folders:get 22222
 ```
 
-_See code: [src/commands/folders/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/get.js)_
+_See code: [src/commands/folders/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/get.js)_
 
-## `box folders:items ID`
+## `box-u-ext folders:items ID`
 
 List items in a folder
 
 ```
 USAGE
-  $ box folders:items ID
+  $ box-u-ext folders:items ID
 
 ARGUMENTS
   ID  ID of the folder to get the items in, use 0 for the root folder
@@ -345,21 +345,21 @@ OPTIONS
   --sort=id|name|date                    The parameter to sort returned items
 
 ALIASES
-  $ box folders:list-items
+  $ box-u-ext folders:list-items
 
 EXAMPLE
   box folders:items 22222
 ```
 
-_See code: [src/commands/folders/items.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/items.js)_
+_See code: [src/commands/folders/items.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/items.js)_
 
-## `box folders:locks ID`
+## `box-u-ext folders:locks ID`
 
 List all locks on a folder
 
 ```
 USAGE
-  $ box folders:locks ID
+  $ box-u-ext folders:locks ID
 
 ARGUMENTS
   ID  ID of the folder to get the locks on
@@ -380,21 +380,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box folders:locks:list
+  $ box-u-ext folders:locks:list
 
 EXAMPLE
   box folders:locks 22222
 ```
 
-_See code: [src/commands/folders/locks/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/locks/index.js)_
+_See code: [src/commands/folders/locks/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/locks/index.js)_
 
-## `box folders:locks:create ID`
+## `box-u-ext folders:locks:create ID`
 
 Create a lock on a folder
 
 ```
 USAGE
-  $ box folders:locks:create ID
+  $ box-u-ext folders:locks:create ID
 
 ARGUMENTS
   ID  ID of the folder to create a lock on
@@ -418,15 +418,15 @@ EXAMPLE
   box folders:locks:create 22222
 ```
 
-_See code: [src/commands/folders/locks/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/locks/create.js)_
+_See code: [src/commands/folders/locks/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/locks/create.js)_
 
-## `box folders:locks:delete ID`
+## `box-u-ext folders:locks:delete ID`
 
 Delete a lock on a folder
 
 ```
 USAGE
-  $ box folders:locks:delete ID
+  $ box-u-ext folders:locks:delete ID
 
 ARGUMENTS
   ID  ID of the folder lock to delete
@@ -450,15 +450,15 @@ EXAMPLE
   box folders:locks:delete 22222
 ```
 
-_See code: [src/commands/folders/locks/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/locks/delete.js)_
+_See code: [src/commands/folders/locks/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/locks/delete.js)_
 
-## `box folders:metadata ID`
+## `box-u-ext folders:metadata ID`
 
 Get all metadata on a folder
 
 ```
 USAGE
-  $ box folders:metadata ID
+  $ box-u-ext folders:metadata ID
 
 ARGUMENTS
   ID  ID of the folder to get all metadata on
@@ -479,21 +479,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box folders:metadata:get-all
+  $ box-u-ext folders:metadata:get-all
 
 EXAMPLE
   box folders:metadata 22222
 ```
 
-_See code: [src/commands/folders/metadata/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/index.js)_
+_See code: [src/commands/folders/metadata/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/index.js)_
 
-## `box folders:metadata:add ID`
+## `box-u-ext folders:metadata:add ID`
 
 Add metadata to a folder
 
 ```
 USAGE
-  $ box folders:metadata:add ID
+  $ box-u-ext folders:metadata:add ID
 
 ARGUMENTS
   ID  ID of the folder to add metadata to
@@ -525,21 +525,21 @@ OPTIONS
   --template-key=template-key            (required) The key of the metadata template to use
 
 ALIASES
-  $ box folders:metadata:create
+  $ box-u-ext folders:metadata:create
 
 EXAMPLE
   box folders:metadata:add 22222 --template-key employeeRecord --data "name=John Doe" --data department=Sales
 ```
 
-_See code: [src/commands/folders/metadata/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/add.js)_
+_See code: [src/commands/folders/metadata/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/add.js)_
 
-## `box folders:metadata:get ID`
+## `box-u-ext folders:metadata:get ID`
 
 Get information about a metadata object
 
 ```
 USAGE
-  $ box folders:metadata:get ID
+  $ box-u-ext folders:metadata:get ID
 
 ARGUMENTS
   ID  ID of the folder to get metadata on
@@ -565,15 +565,15 @@ EXAMPLE
   box folders:metadata:get 22222 --template-key employeeRecord
 ```
 
-_See code: [src/commands/folders/metadata/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/get.js)_
+_See code: [src/commands/folders/metadata/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/get.js)_
 
-## `box folders:metadata:remove ID`
+## `box-u-ext folders:metadata:remove ID`
 
 Delete metadata from a folder
 
 ```
 USAGE
-  $ box folders:metadata:remove ID
+  $ box-u-ext folders:metadata:remove ID
 
 ARGUMENTS
   ID  ID of the folder to remove metadata from
@@ -596,21 +596,21 @@ OPTIONS
   --template-key=template-key            (required) The key of the metadata template to remove
 
 ALIASES
-  $ box folders:metadata:delete
+  $ box-u-ext folders:metadata:delete
 
 EXAMPLE
   box folders:metadata:remove 22222 --scope global --template-key properties
 ```
 
-_See code: [src/commands/folders/metadata/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/remove.js)_
+_See code: [src/commands/folders/metadata/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/remove.js)_
 
-## `box folders:metadata:set ID`
+## `box-u-ext folders:metadata:set ID`
 
 Set metadata on a folder
 
 ```
 USAGE
-  $ box folders:metadata:set ID
+  $ box-u-ext folders:metadata:set ID
 
 ARGUMENTS
   ID  ID of the folder to add metadata to
@@ -645,15 +645,15 @@ EXAMPLE
   box folders:metadata:set 22222 --template-key employeeRecord --data "name=John Doe" --data department=Sales
 ```
 
-_See code: [src/commands/folders/metadata/set.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/set.js)_
+_See code: [src/commands/folders/metadata/set.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/set.js)_
 
-## `box folders:metadata:update ID`
+## `box-u-ext folders:metadata:update ID`
 
 Update the metadata attached to a folder
 
 ```
 USAGE
-  $ box folders:metadata:update ID
+  $ box-u-ext folders:metadata:update ID
 
 ARGUMENTS
   ID  ID of the folder to update metadata on
@@ -708,15 +708,15 @@ EXAMPLE
   box folders:metadata:update 22222 --template-key employeeRecord --replace department=Finance
 ```
 
-_See code: [src/commands/folders/metadata/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/metadata/update.js)_
+_See code: [src/commands/folders/metadata/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/metadata/update.js)_
 
-## `box folders:move ID PARENTID`
+## `box-u-ext folders:move ID PARENTID`
 
 Move a folder to a different folder
 
 ```
 USAGE
-  $ box folders:move ID PARENTID
+  $ box-u-ext folders:move ID PARENTID
 
 ARGUMENTS
   ID        ID of folder to copy
@@ -742,15 +742,15 @@ EXAMPLE
   box folders:move 22222 44444
 ```
 
-_See code: [src/commands/folders/move.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/move.js)_
+_See code: [src/commands/folders/move.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/move.js)_
 
-## `box folders:rename ID NAME`
+## `box-u-ext folders:rename ID NAME`
 
 Rename a folder
 
 ```
 USAGE
-  $ box folders:rename ID NAME
+  $ box-u-ext folders:rename ID NAME
 
 ARGUMENTS
   ID    ID of the folder to rename
@@ -777,15 +777,15 @@ EXAMPLE
   box folders:rename 22222 "New Folder Name"
 ```
 
-_See code: [src/commands/folders/rename.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/rename.js)_
+_See code: [src/commands/folders/rename.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/rename.js)_
 
-## `box folders:share ID`
+## `box-u-ext folders:share ID`
 
 Create a shared link for a folder
 
 ```
 USAGE
-  $ box folders:share ID
+  $ box-u-ext folders:share ID
 
 ARGUMENTS
   ID  ID of the folder to share
@@ -817,22 +817,22 @@ OPTIONS
                                          hyphens.
 
 ALIASES
-  $ box folders:shared-links:create
-  $ box folders:shared-links:update
+  $ box-u-ext folders:shared-links:create
+  $ box-u-ext folders:shared-links:update
 
 EXAMPLE
   box folders:share 22222 --access company --vanity-name my-custom-name-123
 ```
 
-_See code: [src/commands/folders/share.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/share.js)_
+_See code: [src/commands/folders/share.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/share.js)_
 
-## `box folders:unshare ID`
+## `box-u-ext folders:unshare ID`
 
 Delete a shared link for a folder
 
 ```
 USAGE
-  $ box folders:unshare ID
+  $ box-u-ext folders:unshare ID
 
 ARGUMENTS
   ID  ID of the folder to unshare
@@ -853,21 +853,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box folders:shared-links:delete
+  $ box-u-ext folders:shared-links:delete
 
 EXAMPLE
   box folders:unshare 22222
 ```
 
-_See code: [src/commands/folders/unshare.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/unshare.js)_
+_See code: [src/commands/folders/unshare.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/unshare.js)_
 
-## `box folders:update ID`
+## `box-u-ext folders:update ID`
 
 Update a folder
 
 ```
 USAGE
-  $ box folders:update ID
+  $ box-u-ext folders:update ID
 
 ARGUMENTS
   ID  ID of the folder to update
@@ -919,15 +919,15 @@ EXAMPLE
   box folders:update 22222 --name "New Folder Name"
 ```
 
-_See code: [src/commands/folders/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/update.js)_
+_See code: [src/commands/folders/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/update.js)_
 
-## `box folders:upload PATH`
+## `box-u-ext folders:upload PATH`
 
 Upload a folder
 
 ```
 USAGE
-  $ box folders:upload PATH
+  $ box-u-ext folders:upload PATH
 
 ARGUMENTS
   PATH  Local path to the folder to upload
@@ -954,4 +954,4 @@ EXAMPLE
   box folders:upload /path/to/folder
 ```
 
-_See code: [src/commands/folders/upload.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/folders/upload.js)_
+_See code: [src/commands/folders/upload.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/folders/upload.js)_

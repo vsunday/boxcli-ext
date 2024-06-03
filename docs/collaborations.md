@@ -1,21 +1,21 @@
-`box collaborations`
-====================
+`box-u-ext collaborations`
+==========================
 
 Manage collaborations
 
-* [`box collaborations:create ITEMID ITEMTYPE`](#box-collaborationscreate-itemid-itemtype)
-* [`box collaborations:delete ID`](#box-collaborationsdelete-id)
-* [`box collaborations:get ID`](#box-collaborationsget-id)
-* [`box collaborations:pending`](#box-collaborationspending)
-* [`box collaborations:update ID`](#box-collaborationsupdate-id)
+* [`box-u-ext collaborations:create ITEMID ITEMTYPE`](#box-u-ext-collaborationscreate-itemid-itemtype)
+* [`box-u-ext collaborations:delete ID`](#box-u-ext-collaborationsdelete-id)
+* [`box-u-ext collaborations:get ID`](#box-u-ext-collaborationsget-id)
+* [`box-u-ext collaborations:pending`](#box-u-ext-collaborationspending)
+* [`box-u-ext collaborations:update ID`](#box-u-ext-collaborationsupdate-id)
 
-## `box collaborations:create ITEMID ITEMTYPE`
+## `box-u-ext collaborations:create ITEMID ITEMTYPE`
 
 Create a collaboration for a Box item
 
 ```
 USAGE
-  $ box collaborations:create ITEMID ITEMTYPE
+  $ box-u-ext collaborations:create ITEMID ITEMTYPE
 
 ARGUMENTS
   ITEMID    The ID of the Box item to add the collaboration to
@@ -77,21 +77,21 @@ OPTIONS
   --user-id=user-id                                                                        Id for user to collaborate
 
 ALIASES
-  $ box collaborations:add
+  $ box-u-ext collaborations:add
 
 EXAMPLE
   box collaborations:create 22222 folder --role editor --user-id 33333
 ```
 
-_See code: [src/commands/collaborations/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaborations/create.js)_
+_See code: [src/commands/collaborations/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaborations/create.js)_
 
-## `box collaborations:delete ID`
+## `box-u-ext collaborations:delete ID`
 
 Remove a collaboration
 
 ```
 USAGE
-  $ box collaborations:delete ID
+  $ box-u-ext collaborations:delete ID
 
 ARGUMENTS
   ID  The ID of the collaboration to delete
@@ -112,22 +112,22 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box files:collaborations:delete
-  $ box folders:collaborations:delete
+  $ box-u-ext files:collaborations:delete
+  $ box-u-ext folders:collaborations:delete
 
 EXAMPLE
   box collaborations:delete 12345
 ```
 
-_See code: [src/commands/collaborations/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaborations/delete.js)_
+_See code: [src/commands/collaborations/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaborations/delete.js)_
 
-## `box collaborations:get ID`
+## `box-u-ext collaborations:get ID`
 
 Get an individual collaboration
 
 ```
 USAGE
-  $ box collaborations:get ID
+  $ box-u-ext collaborations:get ID
 
 ARGUMENTS
   ID  ID of the collaboration to get
@@ -151,15 +151,15 @@ EXAMPLE
   box collaborations:get 12345
 ```
 
-_See code: [src/commands/collaborations/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaborations/get.js)_
+_See code: [src/commands/collaborations/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaborations/get.js)_
 
-## `box collaborations:pending`
+## `box-u-ext collaborations:pending`
 
 List all pending collaborations for a user
 
 ```
 USAGE
-  $ box collaborations:pending
+  $ box-u-ext collaborations:pending
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -184,21 +184,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box collaborations:get-pending
+  $ box-u-ext collaborations:get-pending
 
 EXAMPLE
   box collaborations:pending
 ```
 
-_See code: [src/commands/collaborations/pending.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaborations/pending.js)_
+_See code: [src/commands/collaborations/pending.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaborations/pending.js)_
 
-## `box collaborations:update ID`
+## `box-u-ext collaborations:update ID`
 
 Update a collaboration
 
 ```
 USAGE
-  $ box collaborations:update ID
+  $ box-u-ext collaborations:update ID
 
 ARGUMENTS
   ID  The ID of the collaboration to update
@@ -256,11 +256,11 @@ OPTIONS
                                                                                                  collaboration status
 
 ALIASES
-  $ box files:collaborations:update
-  $ box folders:collaborations:update
+  $ box-u-ext files:collaborations:update
+  $ box-u-ext folders:collaborations:update
 
 EXAMPLE
   box collaborations:update 12345 --role viewer
 ```
 
-_See code: [src/commands/collaborations/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collaborations/update.js)_
+_See code: [src/commands/collaborations/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collaborations/update.js)_

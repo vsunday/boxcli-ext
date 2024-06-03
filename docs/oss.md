@@ -1,17 +1,17 @@
-`box oss`
-=========
+`box-u-ext oss`
+===============
 
 Print a list of open-source licensed packages used in the Box CLI
 
-* [`box oss`](#box-oss)
+* [`box-u-ext oss`](#box-u-ext-oss)
 
-## `box oss`
+## `box-u-ext oss`
 
 Print a list of open-source licensed packages used in the Box CLI
 
 ```
 USAGE
-  $ box oss
+  $ box-u-ext oss
 
 OPTIONS
   -h, --help     Show CLI help
@@ -20,4 +20,4 @@ OPTIONS
   --no-color     Turn off colors for logging
 ```
 
-_See code: [src/commands/oss.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/oss.js)_
+_See code: [src/commands/oss.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/oss.js)_

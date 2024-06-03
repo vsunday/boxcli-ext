@@ -1,19 +1,19 @@
-`box shared-links`
-==================
+`box-u-ext shared-links`
+========================
 
 Manage shared links
 
-* [`box shared-links:create ITEMID ITEMTYPE`](#box-shared-linkscreate-itemid-itemtype)
-* [`box shared-links:delete ITEMID ITEMTYPE`](#box-shared-linksdelete-itemid-itemtype)
-* [`box shared-links:get URL`](#box-shared-linksget-url)
+* [`box-u-ext shared-links:create ITEMID ITEMTYPE`](#box-u-ext-shared-linkscreate-itemid-itemtype)
+* [`box-u-ext shared-links:delete ITEMID ITEMTYPE`](#box-u-ext-shared-linksdelete-itemid-itemtype)
+* [`box-u-ext shared-links:get URL`](#box-u-ext-shared-linksget-url)
 
-## `box shared-links:create ITEMID ITEMTYPE`
+## `box-u-ext shared-links:create ITEMID ITEMTYPE`
 
 Create a shared link for a Box item
 
 ```
 USAGE
-  $ box shared-links:create ITEMID ITEMTYPE
+  $ box-u-ext shared-links:create ITEMID ITEMTYPE
 
 ARGUMENTS
   ITEMID    ID of the Box item to share
@@ -47,21 +47,21 @@ OPTIONS
                                          hyphens.
 
 ALIASES
-  $ box shared-links:update
+  $ box-u-ext shared-links:update
 
 EXAMPLE
   box shared-links:create 22222 folder --access company --vanity-name my-custom-name-123
 ```
 
-_See code: [src/commands/shared-links/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/shared-links/create.js)_
+_See code: [src/commands/shared-links/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/shared-links/create.js)_
 
-## `box shared-links:delete ITEMID ITEMTYPE`
+## `box-u-ext shared-links:delete ITEMID ITEMTYPE`
 
 Delete a shared link for a Box item
 
 ```
 USAGE
-  $ box shared-links:delete ITEMID ITEMTYPE
+  $ box-u-ext shared-links:delete ITEMID ITEMTYPE
 
 ARGUMENTS
   ITEMID    ID of the Box item to remove the shared link from
@@ -86,15 +86,15 @@ EXAMPLE
   box shared-links:delete 22222 folder
 ```
 
-_See code: [src/commands/shared-links/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/shared-links/delete.js)_
+_See code: [src/commands/shared-links/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/shared-links/delete.js)_
 
-## `box shared-links:get URL`
+## `box-u-ext shared-links:get URL`
 
 Get information from a shared item URL
 
 ```
 USAGE
-  $ box shared-links:get URL
+  $ box-u-ext shared-links:get URL
 
 ARGUMENTS
   URL  Shared item URL to resolve
@@ -119,4 +119,4 @@ EXAMPLE
   box shared-links:get https://app.box.com/s/13ynxiqe3y4tup3j0yn4qairs5ebfxo3
 ```
 
-_See code: [src/commands/shared-links/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/shared-links/get.js)_
+_See code: [src/commands/shared-links/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/shared-links/get.js)_

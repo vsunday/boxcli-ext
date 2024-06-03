@@ -1,19 +1,19 @@
-`box watermarking`
-==================
+`box-u-ext watermarking`
+========================
 
 Apply a watermark on an item
 
-* [`box watermarking:apply ITEMTYPE ITEMID`](#box-watermarkingapply-itemtype-itemid)
-* [`box watermarking:get ITEMTYPE ITEMID`](#box-watermarkingget-itemtype-itemid)
-* [`box watermarking:remove ITEMTYPE ITEMID`](#box-watermarkingremove-itemtype-itemid)
+* [`box-u-ext watermarking:apply ITEMTYPE ITEMID`](#box-u-ext-watermarkingapply-itemtype-itemid)
+* [`box-u-ext watermarking:get ITEMTYPE ITEMID`](#box-u-ext-watermarkingget-itemtype-itemid)
+* [`box-u-ext watermarking:remove ITEMTYPE ITEMID`](#box-u-ext-watermarkingremove-itemtype-itemid)
 
-## `box watermarking:apply ITEMTYPE ITEMID`
+## `box-u-ext watermarking:apply ITEMTYPE ITEMID`
 
 Apply a watermark on an item
 
 ```
 USAGE
-  $ box watermarking:apply ITEMTYPE ITEMID
+  $ box-u-ext watermarking:apply ITEMTYPE ITEMID
 
 ARGUMENTS
   ITEMTYPE  (file|folder) Type of item to apply a watermark to
@@ -38,15 +38,15 @@ EXAMPLE
   box watermarking:apply folder 22222
 ```
 
-_See code: [src/commands/watermarking/apply.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/watermarking/apply.js)_
+_See code: [src/commands/watermarking/apply.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/watermarking/apply.js)_
 
-## `box watermarking:get ITEMTYPE ITEMID`
+## `box-u-ext watermarking:get ITEMTYPE ITEMID`
 
 Get the watermark on an item
 
 ```
 USAGE
-  $ box watermarking:get ITEMTYPE ITEMID
+  $ box-u-ext watermarking:get ITEMTYPE ITEMID
 
 ARGUMENTS
   ITEMTYPE  (file|folder) Type of item to get watermark for
@@ -71,15 +71,15 @@ EXAMPLE
   box watermarking:get folder 22222
 ```
 
-_See code: [src/commands/watermarking/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/watermarking/get.js)_
+_See code: [src/commands/watermarking/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/watermarking/get.js)_
 
-## `box watermarking:remove ITEMTYPE ITEMID`
+## `box-u-ext watermarking:remove ITEMTYPE ITEMID`
 
 Remove a watermark from an item
 
 ```
 USAGE
-  $ box watermarking:remove ITEMTYPE ITEMID
+  $ box-u-ext watermarking:remove ITEMTYPE ITEMID
 
 ARGUMENTS
   ITEMTYPE  (file|folder) Type of item to remove watermark from
@@ -104,4 +104,4 @@ EXAMPLE
   box watermarking:remove folder 22222
 ```
 
-_See code: [src/commands/watermarking/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/watermarking/remove.js)_
+_See code: [src/commands/watermarking/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/watermarking/remove.js)_

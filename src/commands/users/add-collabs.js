@@ -34,25 +34,37 @@ class UsersAddCollabs extends BoxCommand {
 		// 	this.log(`you input --force and --file: ${args.file}`);
 		// }
 
-    // check former users content
-    // this.client.asUser(args.id);
-    const user_info = await this.client.users.get(args.id, {fields: "space_used"});
-    const space_used = user_info.space_used;
-    if (space_used > 0) {
-      this.warn(`User ${args.id} has content in their root folder`);
-    }
+		// check former users content
+		const user_info = await this.client.users.get(args.id, {
+			fields: 'space_used',
+		});
+		const space_used = user_info.space_used;
+		if (space_used > 0) {
+			this.warn(`User ${args.id} has content in their root folder`);
+		} else {
+			this.output(`User ${args.id} has no content in their root folder`);
+		}
 
-    // add collab
-    const items = await this.client.folders.getItems(0, {fields: "id,type,name"});
-    // this.log(JSON.stringify(items.buffer));
-    const target_folder = items.buffer.find(item => item.name.startsWith(args.emailaddress));
-    if (!target_folder) {
-      this.error(`User ${args.id} does not have a folder named ${args.emailaddress}`);
-    }
-    const collab = await this.client.collaborations.createWithUserID(args.id, target_folder.id, this.client.collaborationRoles.EDITOR);
-    if (!!collab) {
-      this.output(collab);
-    }
+		// add collab
+		const items = await this.client.folders.getItems(0, {
+			fields: 'id,type,name',
+		});
+		const target_folder = items.buffer.find((item) =>
+			item.name.includes(args.emailaddress)
+		);
+		if (!target_folder) {
+			this.error(
+				`User ${args.id} does not have a folder with ${args.emailaddress}`
+			);
+		}
+		const collab = await this.client.collaborations.createWithUserID(
+			args.id,
+			target_folder.id,
+			this.client.collaborationRoles.EDITOR
+		);
+		if (!!collab) {
+			this.output(collab);
+		}
 	}
 }
 

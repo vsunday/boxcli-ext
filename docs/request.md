@@ -1,17 +1,17 @@
-`box request`
-=============
+`box-u-ext request`
+===================
 
 Manually specify a Box API request
 
-* [`box request RESOURCE`](#box-request-resource)
+* [`box-u-ext request RESOURCE`](#box-u-ext-request-resource)
 
-## `box request RESOURCE`
+## `box-u-ext request RESOURCE`
 
 Manually specify a Box API request
 
 ```
 USAGE
-  $ box request RESOURCE
+  $ box-u-ext request RESOURCE
 
 ARGUMENTS
   RESOURCE  The Box API resource to make a request against, e.g. /search or https://api.box.com/2.0/search
@@ -36,4 +36,4 @@ OPTIONS
   --save-to-file-path=save-to-file-path     Override default file path to save report
 ```
 
-_See code: [src/commands/request.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/request.js)_
+_See code: [src/commands/request.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/request.js)_

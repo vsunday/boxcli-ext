@@ -6,8 +6,9 @@ const { flags } = require('@oclif/command');
 class UsersTakeOwnershipCommand extends BoxCommand {
 	async run() {
 		const { flags, args } = this.parse(UsersTakeOwnershipCommand);
-		const current_user_id = (await this.client.users.get(this.client.CURRENT_USER_ID)).id;
-		this.log(current_user_id);
+		const current_user_id = (
+			await this.client.users.get(this.client.CURRENT_USER_ID)
+		).id;
 		let params = {
 			body: {
 				owned_by: {
@@ -22,11 +23,13 @@ class UsersTakeOwnershipCommand extends BoxCommand {
 		}
 
 		// @TODO (2018-07-07): Should implement this using the Node SDK. Existing this.client.enterprise.transferUserContent() does not allow the notify option to be passed
-		let movedFolder = await this.client.wrapWithDefaultHandler(this.client.put)(
-			`/users/${args.userID}/folders/0`,
+		this.client.wrapWithDefaultHandler(this.client.put)(
+			// let movedFolder = await this.client.wrapWithDefaultHandler(this.client.put)(
+			`/users/${args.ID}/folders/0`,
 			params
 		);
-		await this.output(movedFolder);
+		// await this.output(movedFolder);
+		this.output(`content transfer for user_id ${args.ID} started`);
 	}
 }
 
@@ -45,7 +48,7 @@ UsersTakeOwnershipCommand.flags = {
 
 UsersTakeOwnershipCommand.args = [
 	{
-		name: 'userID',
+		name: 'ID',
 		required: true,
 		hidden: false,
 		description: 'User whose content should be moved',

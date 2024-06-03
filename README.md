@@ -125,42 +125,42 @@ Avatar URL: 'https://app.box.com/api/avatar/large/77777'
 <!-- commands -->
 # Command Topics
 
-* [`box autocomplete`](docs/autocomplete.md) - Display autocomplete installation instructions
-* [`box collaboration-allowlist`](docs/collaboration-allowlist.md) - List collaboration allowlist entries
-* [`box collaborations`](docs/collaborations.md) - Manage collaborations
-* [`box collections`](docs/collections.md) - List your collections
-* [`box comments`](docs/comments.md) - Manage comments on files
-* [`box configure`](docs/configure.md) - Configure the Box CLI
-* [`box device-pins`](docs/device-pins.md) - List all the device pins for your enterprise
-* [`box events`](docs/events.md) - Get events
-* [`box file-requests`](docs/file-requests.md) - Copies existing file request to new folder
-* [`box files`](docs/files.md) - Manage files
-* [`box folders`](docs/folders.md) - Manage folders
-* [`box groups`](docs/groups.md) - List all groups
-* [`box help`](docs/help.md) - Display help for the Box CLI
-* [`box integration-mappings`](docs/integration-mappings.md) - List Slack integration mappings
-* [`box legal-hold-policies`](docs/legal-hold-policies.md) - List legal hold policies
-* [`box login`](docs/login.md) - Sign in with OAuth and set a new environment or update an existing if reauthorize flag is used
-* [`box metadata-cascade-policies`](docs/metadata-cascade-policies.md) - List the metadata cascade policies on a folder
-* [`box metadata-query`](docs/metadata-query.md) - Create a search using SQL-like syntax to return items that match specific metadata
-* [`box metadata-templates`](docs/metadata-templates.md) - Get all metadata templates in your Enterprise
-* [`box oss`](docs/oss.md) - Print a list of open-source licensed packages used in the Box CLI
-* [`box recent-items`](docs/recent-items.md) - List information about files accessed in the past 90 days up to a 1000 items
-* [`box request`](docs/request.md) - Manually specify a Box API request
-* [`box retention-policies`](docs/retention-policies.md) - List all retention policies for your enterprise
-* [`box search`](docs/search.md) - Search for files and folders in your Enterprise
-* [`box shared-links`](docs/shared-links.md) - Manage shared links
-* [`box sign-requests`](docs/sign-requests.md) - List sign requests
-* [`box sign-templates`](docs/sign-templates.md) - List sign templates
-* [`box storage-policies`](docs/storage-policies.md) - List storage policies
-* [`box tasks`](docs/tasks.md) - Manage tasks
-* [`box terms-of-service`](docs/terms-of-service.md) - List terms of services for your enterprise
-* [`box tokens`](docs/tokens.md) - Get a token. Returns the service account token by default
-* [`box trash`](docs/trash.md) - List all items in trash
-* [`box users`](docs/users.md) - List all Box users
-* [`box watermarking`](docs/watermarking.md) - Apply a watermark on an item
-* [`box web-links`](docs/web-links.md) - Manage web links
-* [`box webhooks`](docs/webhooks.md) - List all webhooks
+* [`box-u-ext autocomplete`](docs/autocomplete.md) - Display autocomplete installation instructions
+* [`box-u-ext collaboration-allowlist`](docs/collaboration-allowlist.md) - List collaboration allowlist entries
+* [`box-u-ext collaborations`](docs/collaborations.md) - Manage collaborations
+* [`box-u-ext collections`](docs/collections.md) - List your collections
+* [`box-u-ext comments`](docs/comments.md) - Manage comments on files
+* [`box-u-ext configure`](docs/configure.md) - Configure the Box CLI
+* [`box-u-ext device-pins`](docs/device-pins.md) - List all the device pins for your enterprise
+* [`box-u-ext events`](docs/events.md) - Get events
+* [`box-u-ext file-requests`](docs/file-requests.md) - Copies existing file request to new folder
+* [`box-u-ext files`](docs/files.md) - Manage files
+* [`box-u-ext folders`](docs/folders.md) - Manage folders
+* [`box-u-ext groups`](docs/groups.md) - List all groups
+* [`box-u-ext help`](docs/help.md) - Display help for the Box CLI
+* [`box-u-ext integration-mappings`](docs/integration-mappings.md) - List Slack integration mappings
+* [`box-u-ext legal-hold-policies`](docs/legal-hold-policies.md) - List legal hold policies
+* [`box-u-ext login`](docs/login.md) - Sign in with OAuth and set a new environment or update an existing if reauthorize flag is used
+* [`box-u-ext metadata-cascade-policies`](docs/metadata-cascade-policies.md) - List the metadata cascade policies on a folder
+* [`box-u-ext metadata-query`](docs/metadata-query.md) - Create a search using SQL-like syntax to return items that match specific metadata
+* [`box-u-ext metadata-templates`](docs/metadata-templates.md) - Get all metadata templates in your Enterprise
+* [`box-u-ext oss`](docs/oss.md) - Print a list of open-source licensed packages used in the Box CLI
+* [`box-u-ext recent-items`](docs/recent-items.md) - List information about files accessed in the past 90 days up to a 1000 items
+* [`box-u-ext request`](docs/request.md) - Manually specify a Box API request
+* [`box-u-ext retention-policies`](docs/retention-policies.md) - List all retention policies for your enterprise
+* [`box-u-ext search`](docs/search.md) - Search for files and folders in your Enterprise
+* [`box-u-ext shared-links`](docs/shared-links.md) - Manage shared links
+* [`box-u-ext sign-requests`](docs/sign-requests.md) - List sign requests
+* [`box-u-ext sign-templates`](docs/sign-templates.md) - List sign templates
+* [`box-u-ext storage-policies`](docs/storage-policies.md) - List storage policies
+* [`box-u-ext tasks`](docs/tasks.md) - Manage tasks
+* [`box-u-ext terms-of-service`](docs/terms-of-service.md) - List terms of services for your enterprise
+* [`box-u-ext tokens`](docs/tokens.md) - Get a token. Returns the service account token by default
+* [`box-u-ext trash`](docs/trash.md) - List all items in trash
+* [`box-u-ext users`](docs/users.md) - List all Box users
+* [`box-u-ext watermarking`](docs/watermarking.md) - Apply a watermark on an item
+* [`box-u-ext web-links`](docs/web-links.md) - Manage web links
+* [`box-u-ext webhooks`](docs/webhooks.md) - List all webhooks
 
 <!-- commandsstop -->
 

@@ -1,17 +1,17 @@
-`box login`
-===========
+`box-u-ext login`
+=================
 
 Sign in with OAuth and set a new environment or update an existing if reauthorize flag is used
 
-* [`box login`](#box-login)
+* [`box-u-ext login`](#box-u-ext-login)
 
-## `box login`
+## `box-u-ext login`
 
 Sign in with OAuth and set a new environment or update an existing if reauthorize flag is used
 
 ```
 USAGE
-  $ box login
+  $ box-u-ext login
 
 OPTIONS
   -c, --code         Manually visit authorize URL and input code
@@ -24,4 +24,4 @@ OPTIONS
   --no-color         Turn off colors for logging
 ```
 
-_See code: [src/commands/login.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/login.js)_
+_See code: [src/commands/login.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/login.js)_

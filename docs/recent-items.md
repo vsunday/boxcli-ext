@@ -1,17 +1,17 @@
-`box recent-items`
-==================
+`box-u-ext recent-items`
+========================
 
 List information about files accessed in the past 90 days up to a 1000 items
 
-* [`box recent-items`](#box-recent-items)
+* [`box-u-ext recent-items`](#box-u-ext-recent-items)
 
-## `box recent-items`
+## `box-u-ext recent-items`
 
 List information about files accessed in the past 90 days up to a 1000 items
 
 ```
 USAGE
-  $ box recent-items
+  $ box-u-ext recent-items
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -39,4 +39,4 @@ EXAMPLE
   box recent-items
 ```
 
-_See code: [src/commands/recent-items.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/recent-items.js)_
+_See code: [src/commands/recent-items.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/recent-items.js)_

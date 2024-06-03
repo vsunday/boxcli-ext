@@ -1,17 +1,17 @@
-`box search`
-============
+`box-u-ext search`
+==================
 
 Search for files and folders in your Enterprise
 
-* [`box search [QUERY]`](#box-search-query)
+* [`box-u-ext search [QUERY]`](#box-u-ext-search-query)
 
-## `box search [QUERY]`
+## `box-u-ext search [QUERY]`
 
 Search for files and folders in your Enterprise
 
 ```
 USAGE
-  $ box search [QUERY]
+  $ box-u-ext search [QUERY]
 
 ARGUMENTS
   QUERY  The search term
@@ -88,4 +88,4 @@ EXAMPLES
   box search --mdfilter "enterprise.employeeRecord.name=John Doe"
 ```
 
-_See code: [src/commands/search.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/search.js)_
+_See code: [src/commands/search.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/search.js)_

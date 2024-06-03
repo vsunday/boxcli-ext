@@ -1,28 +1,28 @@
-`box groups`
-============
+`box-u-ext groups`
+==================
 
 List all groups
 
-* [`box groups`](#box-groups)
-* [`box groups:collaborations ID`](#box-groupscollaborations-id)
-* [`box groups:create NAME`](#box-groupscreate-name)
-* [`box groups:delete ID`](#box-groupsdelete-id)
-* [`box groups:get ID`](#box-groupsget-id)
-* [`box groups:memberships ID`](#box-groupsmemberships-id)
-* [`box groups:memberships:add USERID GROUPID`](#box-groupsmembershipsadd-userid-groupid)
-* [`box groups:memberships:get ID`](#box-groupsmembershipsget-id)
-* [`box groups:memberships:remove ID`](#box-groupsmembershipsremove-id)
-* [`box groups:memberships:update ID`](#box-groupsmembershipsupdate-id)
-* [`box groups:terminate-session`](#box-groupsterminate-session)
-* [`box groups:update ID`](#box-groupsupdate-id)
+* [`box-u-ext groups`](#box-u-ext-groups)
+* [`box-u-ext groups:collaborations ID`](#box-u-ext-groupscollaborations-id)
+* [`box-u-ext groups:create NAME`](#box-u-ext-groupscreate-name)
+* [`box-u-ext groups:delete ID`](#box-u-ext-groupsdelete-id)
+* [`box-u-ext groups:get ID`](#box-u-ext-groupsget-id)
+* [`box-u-ext groups:memberships ID`](#box-u-ext-groupsmemberships-id)
+* [`box-u-ext groups:memberships:add USERID GROUPID`](#box-u-ext-groupsmembershipsadd-userid-groupid)
+* [`box-u-ext groups:memberships:get ID`](#box-u-ext-groupsmembershipsget-id)
+* [`box-u-ext groups:memberships:remove ID`](#box-u-ext-groupsmembershipsremove-id)
+* [`box-u-ext groups:memberships:update ID`](#box-u-ext-groupsmembershipsupdate-id)
+* [`box-u-ext groups:terminate-session`](#box-u-ext-groupsterminate-session)
+* [`box-u-ext groups:update ID`](#box-u-ext-groupsupdate-id)
 
-## `box groups`
+## `box-u-ext groups`
 
 List all groups
 
 ```
 USAGE
-  $ box groups
+  $ box-u-ext groups
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -48,21 +48,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:list
+  $ box-u-ext groups:list
 
 EXAMPLE
   box groups
 ```
 
-_See code: [src/commands/groups/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/index.js)_
+_See code: [src/commands/groups/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/index.js)_
 
-## `box groups:collaborations ID`
+## `box-u-ext groups:collaborations ID`
 
 List collaborations for a group
 
 ```
 USAGE
-  $ box groups:collaborations ID
+  $ box-u-ext groups:collaborations ID
 
 ARGUMENTS
   ID  ID of the group to get collaborations for
@@ -83,22 +83,22 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:list-collaborations
-  $ box collaborations:list-for-group
+  $ box-u-ext groups:list-collaborations
+  $ box-u-ext collaborations:list-for-group
 
 EXAMPLE
   box groups:collaborations 12345
 ```
 
-_See code: [src/commands/groups/collaborations.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/collaborations.js)_
+_See code: [src/commands/groups/collaborations.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/collaborations.js)_
 
-## `box groups:create NAME`
+## `box-u-ext groups:create NAME`
 
 Create a group
 
 ```
 USAGE
-  $ box groups:create NAME
+  $ box-u-ext groups:create NAME
 
 ARGUMENTS
   NAME  Group name
@@ -145,15 +145,15 @@ EXAMPLE
   box groups:create "US Employees"
 ```
 
-_See code: [src/commands/groups/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/create.js)_
+_See code: [src/commands/groups/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/create.js)_
 
-## `box groups:delete ID`
+## `box-u-ext groups:delete ID`
 
 Delete a group
 
 ```
 USAGE
-  $ box groups:delete ID
+  $ box-u-ext groups:delete ID
 
 ARGUMENTS
   ID  ID of the group to delete
@@ -177,15 +177,15 @@ EXAMPLE
   box groups:delete 12345
 ```
 
-_See code: [src/commands/groups/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/delete.js)_
+_See code: [src/commands/groups/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/delete.js)_
 
-## `box groups:get ID`
+## `box-u-ext groups:get ID`
 
 Get information about a group
 
 ```
 USAGE
-  $ box groups:get ID
+  $ box-u-ext groups:get ID
 
 ARGUMENTS
   ID  ID of the group to get
@@ -209,15 +209,15 @@ EXAMPLE
   box groups:get 12345
 ```
 
-_See code: [src/commands/groups/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/get.js)_
+_See code: [src/commands/groups/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/get.js)_
 
-## `box groups:memberships ID`
+## `box-u-ext groups:memberships ID`
 
 List members of a group
 
 ```
 USAGE
-  $ box groups:memberships ID
+  $ box-u-ext groups:memberships ID
 
 ARGUMENTS
   ID  ID of the group to get memberships for
@@ -245,21 +245,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:membership:list
+  $ box-u-ext groups:membership:list
 
 EXAMPLE
   box groups:memberships 12345
 ```
 
-_See code: [src/commands/groups/memberships/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/memberships/index.js)_
+_See code: [src/commands/groups/memberships/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/memberships/index.js)_
 
-## `box groups:memberships:add USERID GROUPID`
+## `box-u-ext groups:memberships:add USERID GROUPID`
 
 Add a user to a group
 
 ```
 USAGE
-  $ box groups:memberships:add USERID GROUPID
+  $ box-u-ext groups:memberships:add USERID GROUPID
 
 ARGUMENTS
   USERID   ID of the user to add to the group
@@ -286,21 +286,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:membership:add
+  $ box-u-ext groups:membership:add
 
 EXAMPLE
   box groups:memberships:add 33333 12345
 ```
 
-_See code: [src/commands/groups/memberships/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/memberships/add.js)_
+_See code: [src/commands/groups/memberships/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/memberships/add.js)_
 
-## `box groups:memberships:get ID`
+## `box-u-ext groups:memberships:get ID`
 
 Get information about a group membership
 
 ```
 USAGE
-  $ box groups:memberships:get ID
+  $ box-u-ext groups:memberships:get ID
 
 ARGUMENTS
   ID  ID of the group membership to get
@@ -321,21 +321,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:membership:get
+  $ box-u-ext groups:membership:get
 
 EXAMPLE
   box groups:memberships:get 12345
 ```
 
-_See code: [src/commands/groups/memberships/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/memberships/get.js)_
+_See code: [src/commands/groups/memberships/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/memberships/get.js)_
 
-## `box groups:memberships:remove ID`
+## `box-u-ext groups:memberships:remove ID`
 
 Remove a user from a group
 
 ```
 USAGE
-  $ box groups:memberships:remove ID
+  $ box-u-ext groups:memberships:remove ID
 
 ARGUMENTS
   ID  ID of the group membership record to delete
@@ -356,21 +356,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:membership:remove
+  $ box-u-ext groups:membership:remove
 
 EXAMPLE
   box groups:memberships:remove 12345
 ```
 
-_See code: [src/commands/groups/memberships/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/memberships/remove.js)_
+_See code: [src/commands/groups/memberships/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/memberships/remove.js)_
 
-## `box groups:memberships:update ID`
+## `box-u-ext groups:memberships:update ID`
 
 Update a user's membership to a group
 
 ```
 USAGE
-  $ box groups:memberships:update ID
+  $ box-u-ext groups:memberships:update ID
 
 ARGUMENTS
   ID  ID of the group membership to update
@@ -396,21 +396,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:membership:update
+  $ box-u-ext groups:membership:update
 
 EXAMPLE
   box groups:memberships:update
 ```
 
-_See code: [src/commands/groups/memberships/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/memberships/update.js)_
+_See code: [src/commands/groups/memberships/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/memberships/update.js)_
 
-## `box groups:terminate-session`
+## `box-u-ext groups:terminate-session`
 
 Validates the roles and permissions of the group, and creates asynchronous jobs to terminate the group's sessions.
 
 ```
 USAGE
-  $ box groups:terminate-session
+  $ box-u-ext groups:terminate-session
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -429,21 +429,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box groups:terminate-session
+  $ box-u-ext groups:terminate-session
 
 EXAMPLE
   box groups:terminate-session --group-ids 123 345
 ```
 
-_See code: [src/commands/groups/terminate-session.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/terminate-session.js)_
+_See code: [src/commands/groups/terminate-session.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/terminate-session.js)_
 
-## `box groups:update ID`
+## `box-u-ext groups:update ID`
 
 Update a group
 
 ```
 USAGE
-  $ box groups:update ID
+  $ box-u-ext groups:update ID
 
 ARGUMENTS
   ID  ID of the group to update
@@ -489,4 +489,4 @@ EXAMPLE
   box groups:update 12345 --name "U.S. Employees"
 ```
 
-_See code: [src/commands/groups/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/groups/update.js)_
+_See code: [src/commands/groups/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/groups/update.js)_

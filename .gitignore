@@ -71,3 +71,7 @@ typings/
 #Intelij Idea
 *.iml
 .idea
+
+# other
+key
+core

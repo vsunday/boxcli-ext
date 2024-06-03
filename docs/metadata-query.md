@@ -1,17 +1,17 @@
-`box metadata-query`
-====================
+`box-u-ext metadata-query`
+==========================
 
 Create a search using SQL-like syntax to return items that match specific metadata
 
-* [`box metadata-query FROM ANCESTORFOLDERID`](#box-metadata-query-from-ancestorfolderid)
+* [`box-u-ext metadata-query FROM ANCESTORFOLDERID`](#box-u-ext-metadata-query-from-ancestorfolderid)
 
-## `box metadata-query FROM ANCESTORFOLDERID`
+## `box-u-ext metadata-query FROM ANCESTORFOLDERID`
 
 Create a search using SQL-like syntax to return items that match specific metadata
 
 ```
 USAGE
-  $ box metadata-query FROM ANCESTORFOLDERID
+  $ box-u-ext metadata-query FROM ANCESTORFOLDERID
 
 ARGUMENTS
   FROM              The template used in the query. Must be in the form scope.templateKey
@@ -55,4 +55,4 @@ EXAMPLE
   created_at,metadata.enterprise_1234.contracts
 ```
 
-_See code: [src/commands/metadata-query.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-query.js)_
+_See code: [src/commands/metadata-query.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-query.js)_

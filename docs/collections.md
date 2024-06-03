@@ -1,20 +1,20 @@
-`box collections`
-=================
+`box-u-ext collections`
+=======================
 
 List your collections
 
-* [`box collections`](#box-collections)
-* [`box collections:add ITEMTYPE ITEMID COLLECTIONID`](#box-collectionsadd-itemtype-itemid-collectionid)
-* [`box collections:items ID`](#box-collectionsitems-id)
-* [`box collections:remove ITEMTYPE ITEMID COLLECTIONID`](#box-collectionsremove-itemtype-itemid-collectionid)
+* [`box-u-ext collections`](#box-u-ext-collections)
+* [`box-u-ext collections:add ITEMTYPE ITEMID COLLECTIONID`](#box-u-ext-collectionsadd-itemtype-itemid-collectionid)
+* [`box-u-ext collections:items ID`](#box-u-ext-collectionsitems-id)
+* [`box-u-ext collections:remove ITEMTYPE ITEMID COLLECTIONID`](#box-u-ext-collectionsremove-itemtype-itemid-collectionid)
 
-## `box collections`
+## `box-u-ext collections`
 
 List your collections
 
 ```
 USAGE
-  $ box collections
+  $ box-u-ext collections
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -32,21 +32,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box collections:list
+  $ box-u-ext collections:list
 
 EXAMPLE
   box collections
 ```
 
-_See code: [src/commands/collections/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collections/index.js)_
+_See code: [src/commands/collections/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/index.js)_
 
-## `box collections:add ITEMTYPE ITEMID COLLECTIONID`
+## `box-u-ext collections:add ITEMTYPE ITEMID COLLECTIONID`
 
 Add an item to a collection
 
 ```
 USAGE
-  $ box collections:add ITEMTYPE ITEMID COLLECTIONID
+  $ box-u-ext collections:add ITEMTYPE ITEMID COLLECTIONID
 
 ARGUMENTS
   ITEMTYPE      (folder|file|web_link) Type of item
@@ -72,15 +72,15 @@ EXAMPLE
   box collections:add file 11111 12345
 ```
 
-_See code: [src/commands/collections/add.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collections/add.js)_
+_See code: [src/commands/collections/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/add.js)_
 
-## `box collections:items ID`
+## `box-u-ext collections:items ID`
 
 Get items in a collection
 
 ```
 USAGE
-  $ box collections:items ID
+  $ box-u-ext collections:items ID
 
 ARGUMENTS
   ID  ID of the collection to retrieve the items of
@@ -111,15 +111,15 @@ EXAMPLE
   box collections:items 12345
 ```
 
-_See code: [src/commands/collections/items.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collections/items.js)_
+_See code: [src/commands/collections/items.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/items.js)_
 
-## `box collections:remove ITEMTYPE ITEMID COLLECTIONID`
+## `box-u-ext collections:remove ITEMTYPE ITEMID COLLECTIONID`
 
 Remove an item from a collection
 
 ```
 USAGE
-  $ box collections:remove ITEMTYPE ITEMID COLLECTIONID
+  $ box-u-ext collections:remove ITEMTYPE ITEMID COLLECTIONID
 
 ARGUMENTS
   ITEMTYPE      (folder|file) Type of item
@@ -145,4 +145,4 @@ EXAMPLE
   box collections:remove file 11111 12345
 ```
 
-_See code: [src/commands/collections/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/collections/remove.js)_
+_See code: [src/commands/collections/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/collections/remove.js)_

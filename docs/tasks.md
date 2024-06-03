@@ -1,25 +1,25 @@
-`box tasks`
-===========
+`box-u-ext tasks`
+=================
 
 Manage tasks
 
-* [`box tasks:assign TASKID`](#box-tasksassign-taskid)
-* [`box tasks:assignments ID`](#box-tasksassignments-id)
-* [`box tasks:assignments:delete ID`](#box-tasksassignmentsdelete-id)
-* [`box tasks:assignments:get ID`](#box-tasksassignmentsget-id)
-* [`box tasks:assignments:update ID`](#box-tasksassignmentsupdate-id)
-* [`box tasks:create FILEID`](#box-taskscreate-fileid)
-* [`box tasks:delete ID`](#box-tasksdelete-id)
-* [`box tasks:get ID`](#box-tasksget-id)
-* [`box tasks:update ID`](#box-tasksupdate-id)
+* [`box-u-ext tasks:assign TASKID`](#box-u-ext-tasksassign-taskid)
+* [`box-u-ext tasks:assignments ID`](#box-u-ext-tasksassignments-id)
+* [`box-u-ext tasks:assignments:delete ID`](#box-u-ext-tasksassignmentsdelete-id)
+* [`box-u-ext tasks:assignments:get ID`](#box-u-ext-tasksassignmentsget-id)
+* [`box-u-ext tasks:assignments:update ID`](#box-u-ext-tasksassignmentsupdate-id)
+* [`box-u-ext tasks:create FILEID`](#box-u-ext-taskscreate-fileid)
+* [`box-u-ext tasks:delete ID`](#box-u-ext-tasksdelete-id)
+* [`box-u-ext tasks:get ID`](#box-u-ext-tasksget-id)
+* [`box-u-ext tasks:update ID`](#box-u-ext-tasksupdate-id)
 
-## `box tasks:assign TASKID`
+## `box-u-ext tasks:assign TASKID`
 
 Create a task assignment
 
 ```
 USAGE
-  $ box tasks:assign TASKID
+  $ box-u-ext tasks:assign TASKID
 
 ARGUMENTS
   TASKID  ID of the task to assign
@@ -42,21 +42,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path        Override default file path to save report
 
 ALIASES
-  $ box task-assignments:create
+  $ box-u-ext task-assignments:create
 
 EXAMPLE
   box tasks:assign 88888 --assign-to-user-id 33333
 ```
 
-_See code: [src/commands/tasks/assign.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/assign.js)_
+_See code: [src/commands/tasks/assign.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/assign.js)_
 
-## `box tasks:assignments ID`
+## `box-u-ext tasks:assignments ID`
 
 List all task assignments on a task
 
 ```
 USAGE
-  $ box tasks:assignments ID
+  $ box-u-ext tasks:assignments ID
 
 ARGUMENTS
   ID  ID of the task to get assignments for
@@ -77,21 +77,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box task-assignments:list
+  $ box-u-ext task-assignments:list
 
 EXAMPLE
   box tasks:assignments 88888
 ```
 
-_See code: [src/commands/tasks/assignments/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/assignments/index.js)_
+_See code: [src/commands/tasks/assignments/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/assignments/index.js)_
 
-## `box tasks:assignments:delete ID`
+## `box-u-ext tasks:assignments:delete ID`
 
 Delete a task assignment
 
 ```
 USAGE
-  $ box tasks:assignments:delete ID
+  $ box-u-ext tasks:assignments:delete ID
 
 ARGUMENTS
   ID  ID of the task assignment to delete
@@ -112,21 +112,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box task-assignments:delete
+  $ box-u-ext task-assignments:delete
 
 EXAMPLE
   box tasks:assignments:delete 12345
 ```
 
-_See code: [src/commands/tasks/assignments/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/assignments/delete.js)_
+_See code: [src/commands/tasks/assignments/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/assignments/delete.js)_
 
-## `box tasks:assignments:get ID`
+## `box-u-ext tasks:assignments:get ID`
 
 Get information about a task assignment
 
 ```
 USAGE
-  $ box tasks:assignments:get ID
+  $ box-u-ext tasks:assignments:get ID
 
 ARGUMENTS
   ID  ID of the task assignment to get
@@ -147,21 +147,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box task-assignments:get
+  $ box-u-ext task-assignments:get
 
 EXAMPLE
   box tasks:assignments:get 12345
 ```
 
-_See code: [src/commands/tasks/assignments/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/assignments/get.js)_
+_See code: [src/commands/tasks/assignments/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/assignments/get.js)_
 
-## `box tasks:assignments:update ID`
+## `box-u-ext tasks:assignments:update ID`
 
 Update a task assignment
 
 ```
 USAGE
-  $ box tasks:assignments:update ID
+  $ box-u-ext tasks:assignments:update ID
 
 ARGUMENTS
   ID  ID of the task assignment to update
@@ -184,21 +184,21 @@ OPTIONS
   --status=completed|incomplete|approved|rejected  Set the resolution state of the task assignment
 
 ALIASES
-  $ box task-assignments:update
+  $ box-u-ext task-assignments:update
 
 EXAMPLE
   box tasks:assignments:update 12345 --status approved
 ```
 
-_See code: [src/commands/tasks/assignments/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/assignments/update.js)_
+_See code: [src/commands/tasks/assignments/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/assignments/update.js)_
 
-## `box tasks:create FILEID`
+## `box-u-ext tasks:create FILEID`
 
 Create a task on a file
 
 ```
 USAGE
-  $ box tasks:create FILEID
+  $ box-u-ext tasks:create FILEID
 
 ARGUMENTS
   FILEID  ID of the file to create a task on
@@ -236,15 +236,15 @@ EXAMPLE
   box tasks:create 11111 --message "Please proofread this document"
 ```
 
-_See code: [src/commands/tasks/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/create.js)_
+_See code: [src/commands/tasks/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/create.js)_
 
-## `box tasks:delete ID`
+## `box-u-ext tasks:delete ID`
 
 Delete a task
 
 ```
 USAGE
-  $ box tasks:delete ID
+  $ box-u-ext tasks:delete ID
 
 ARGUMENTS
   ID  ID of the task to delete
@@ -268,15 +268,15 @@ EXAMPLE
   box tasks:delete 88888
 ```
 
-_See code: [src/commands/tasks/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/delete.js)_
+_See code: [src/commands/tasks/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/delete.js)_
 
-## `box tasks:get ID`
+## `box-u-ext tasks:get ID`
 
 Get information about a task
 
 ```
 USAGE
-  $ box tasks:get ID
+  $ box-u-ext tasks:get ID
 
 ARGUMENTS
   ID  ID of the task to get
@@ -300,15 +300,15 @@ EXAMPLE
   box tasks:get 88888
 ```
 
-_See code: [src/commands/tasks/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/get.js)_
+_See code: [src/commands/tasks/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/get.js)_
 
-## `box tasks:update ID`
+## `box-u-ext tasks:update ID`
 
 Update a task on a file
 
 ```
 USAGE
-  $ box tasks:update ID
+  $ box-u-ext tasks:update ID
 
 ARGUMENTS
   ID  ID of the task to update
@@ -344,4 +344,4 @@ EXAMPLE
   box tasks:update 88888 --due-at 1w
 ```
 
-_See code: [src/commands/tasks/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/tasks/update.js)_
+_See code: [src/commands/tasks/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/tasks/update.js)_

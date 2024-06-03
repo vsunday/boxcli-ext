@@ -1,22 +1,22 @@
-`box terms-of-service`
-======================
+`box-u-ext terms-of-service`
+============================
 
 List terms of services for your enterprise
 
-* [`box terms-of-service`](#box-terms-of-service)
-* [`box terms-of-service:create`](#box-terms-of-servicecreate)
-* [`box terms-of-service:get ID`](#box-terms-of-serviceget-id)
-* [`box terms-of-service:get-user-status TOSID`](#box-terms-of-serviceget-user-status-tosid)
-* [`box terms-of-service:set-user-status ID`](#box-terms-of-serviceset-user-status-id)
-* [`box terms-of-service:update ID`](#box-terms-of-serviceupdate-id)
+* [`box-u-ext terms-of-service`](#box-u-ext-terms-of-service)
+* [`box-u-ext terms-of-service:create`](#box-u-ext-terms-of-servicecreate)
+* [`box-u-ext terms-of-service:get ID`](#box-u-ext-terms-of-serviceget-id)
+* [`box-u-ext terms-of-service:get-user-status TOSID`](#box-u-ext-terms-of-serviceget-user-status-tosid)
+* [`box-u-ext terms-of-service:set-user-status ID`](#box-u-ext-terms-of-serviceset-user-status-id)
+* [`box-u-ext terms-of-service:update ID`](#box-u-ext-terms-of-serviceupdate-id)
 
-## `box terms-of-service`
+## `box-u-ext terms-of-service`
 
 List terms of services for your enterprise
 
 ```
 USAGE
-  $ box terms-of-service
+  $ box-u-ext terms-of-service
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -38,15 +38,15 @@ EXAMPLE
   box terms-of-service
 ```
 
-_See code: [src/commands/terms-of-service/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/index.js)_
+_See code: [src/commands/terms-of-service/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/index.js)_
 
-## `box terms-of-service:create`
+## `box-u-ext terms-of-service:create`
 
 Create a terms of service
 
 ```
 USAGE
-  $ box terms-of-service:create
+  $ box-u-ext terms-of-service:create
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -70,15 +70,15 @@ EXAMPLE
   box terms-of-service:create --type external --status enabled --text "By using this service, you agree to...."
 ```
 
-_See code: [src/commands/terms-of-service/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/create.js)_
+_See code: [src/commands/terms-of-service/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/create.js)_
 
-## `box terms-of-service:get ID`
+## `box-u-ext terms-of-service:get ID`
 
 Get information on a terms of service
 
 ```
 USAGE
-  $ box terms-of-service:get ID
+  $ box-u-ext terms-of-service:get ID
 
 ARGUMENTS
   ID  ID for the terms of service to get
@@ -102,15 +102,15 @@ EXAMPLE
   box terms-of-service:get 55555
 ```
 
-_See code: [src/commands/terms-of-service/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/get.js)_
+_See code: [src/commands/terms-of-service/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/get.js)_
 
-## `box terms-of-service:get-user-status TOSID`
+## `box-u-ext terms-of-service:get-user-status TOSID`
 
 Get a user's status on a terms of service
 
 ```
 USAGE
-  $ box terms-of-service:get-user-status TOSID
+  $ box-u-ext terms-of-service:get-user-status TOSID
 
 ARGUMENTS
   TOSID  ID of the terms of service to get user status for
@@ -135,15 +135,15 @@ EXAMPLE
   box terms-of-service:get-user-status 55555
 ```
 
-_See code: [src/commands/terms-of-service/get-user-status.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/get-user-status.js)_
+_See code: [src/commands/terms-of-service/get-user-status.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/get-user-status.js)_
 
-## `box terms-of-service:set-user-status ID`
+## `box-u-ext terms-of-service:set-user-status ID`
 
 Set a user's status on a terms of service with a terms of service Id
 
 ```
 USAGE
-  $ box terms-of-service:set-user-status ID
+  $ box-u-ext terms-of-service:set-user-status ID
 
 ARGUMENTS
   ID  ID of the terms of service to set the user status on
@@ -170,15 +170,15 @@ EXAMPLE
   box terms-of-service:set-user-status 55555 --accept
 ```
 
-_See code: [src/commands/terms-of-service/set-user-status.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/set-user-status.js)_
+_See code: [src/commands/terms-of-service/set-user-status.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/set-user-status.js)_
 
-## `box terms-of-service:update ID`
+## `box-u-ext terms-of-service:update ID`
 
 Update a terms of service
 
 ```
 USAGE
-  $ box terms-of-service:update ID
+  $ box-u-ext terms-of-service:update ID
 
 ARGUMENTS
   ID  ID of the terms of service to update
@@ -204,4 +204,4 @@ EXAMPLE
   box terms-of-service:update 55555 --status disabled
 ```
 
-_See code: [src/commands/terms-of-service/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/terms-of-service/update.js)_
+_See code: [src/commands/terms-of-service/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/terms-of-service/update.js)_

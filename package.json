@@ -1,6 +1,6 @@
 {
-	"name": "@box/cli",
-	"description": "Official command line interface for the Box API",
+	"name": "@box-u-ext/cli",
+	"description": "Unofficial command line interface for the Box API",
 	"keywords": [
 		"box",
 		"cli",
@@ -9,8 +9,8 @@
 		"upload",
 		"download"
 	],
-	"version": "3.14.0",
-	"author": "Box <oss@box.com>",
+	"version": "0.0.2",
+	"author": "ykikuchi <ykikuchi@box.com>",
 	"license": "Apache-2.0",
 	"main": "src/index.js",
 	"bin": {
@@ -18,9 +18,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/box/boxcli.git"
+		"url": "https://github.com/vsunday/boxcli-ext.git"
 	},
-	"bugs": "https://github.com/box/boxcli/issues",
+	"bugs": "https://github.com/vsunday/boxcli-ext/issues",
 	"dependencies": {
 		"@discoveryjs/json-ext": "^0.5.7",
 		"@oclif/command": "^1.5.5",
@@ -48,7 +48,8 @@
 		"nanoid": "^3.3.1",
 		"open": "^8.0.4",
 		"ora": "^5.4.1",
-		"p-event": "^2.3.1"
+		"p-event": "^2.3.1",
+		"punycode": "^2.3.1"
 	},
 	"devDependencies": {
 		"@oclif/dev-cli": "^1.19.5",
@@ -80,14 +81,18 @@
 	],
 	"oclif": {
 		"commands": "./src/commands",
-		"bin": "box",
+		"bin": "box-u-ext",
 		"hooks": {
 			"init": [
 				"./src/hooks/init/verbose"
 			]
 		},
 		"macos": {
-			"identifier": "com.box.cli"
+			"identifier": "com.box-u-ext.cli"
+		},
+		"windows": {
+			"name": "box-u-ext",
+			"keypath": "key/key.pem"
 		},
 		"plugins": [
 			"@oclif/plugin-help",
@@ -140,8 +145,10 @@
 		"prepack": "oclif-dev manifest && oclif-dev readme --multi && npm shrinkwrap && git checkout origin/main -- package-lock.json",
 		"postpack": "rm -f oclif.manifest.json && rm -f npm-shrinkwrap.json",
 		"version": "oclif-dev readme --multi && git add README.md && git add docs",
+		"build-win": "oclif-dev pack:win && rm -rf tmp/ && npm run binaries-win",
 		"build": "oclif-dev pack:macos && rm -rf tmp/ && oclif-dev pack:win && rm -rf tmp/ && npm run binaries",
-		"binaries": "pkg --targets node12-macos-x64,node12-win-x64,node12-linux-x64 --out-path ./dist .",
+		"binaries": "pkg --targets node14-macos-x64,node14-win-x64,node14-linux-x64 --out-path ./dist .",
+		"binaries-win": "pkg --targets node12-win-x64,node12-linux-x64 --out-path ./dist .",
 		"changelog": "node node_modules/standard-version/bin/cli.js --skip.commit --skip.push --skip.tag --dry-run"
 	},
 	"overrides": {

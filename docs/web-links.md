@@ -1,21 +1,21 @@
-`box web-links`
-===============
+`box-u-ext web-links`
+=====================
 
 Manage web links
 
-* [`box web-links:create URL`](#box-web-linkscreate-url)
-* [`box web-links:delete ID`](#box-web-linksdelete-id)
-* [`box web-links:get ID`](#box-web-linksget-id)
-* [`box web-links:move ID PARENTID`](#box-web-linksmove-id-parentid)
-* [`box web-links:update ID`](#box-web-linksupdate-id)
+* [`box-u-ext web-links:create URL`](#box-u-ext-web-linkscreate-url)
+* [`box-u-ext web-links:delete ID`](#box-u-ext-web-linksdelete-id)
+* [`box-u-ext web-links:get ID`](#box-u-ext-web-linksget-id)
+* [`box-u-ext web-links:move ID PARENTID`](#box-u-ext-web-linksmove-id-parentid)
+* [`box-u-ext web-links:update ID`](#box-u-ext-web-linksupdate-id)
 
-## `box web-links:create URL`
+## `box-u-ext web-links:create URL`
 
 Create a new web link
 
 ```
 USAGE
-  $ box web-links:create URL
+  $ box-u-ext web-links:create URL
 
 ARGUMENTS
   URL  The URL the web link points to. Must start with "http://" or "https://"
@@ -42,15 +42,15 @@ EXAMPLE
   box web-links:create http://example.com --parent-id 0
 ```
 
-_See code: [src/commands/web-links/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/web-links/create.js)_
+_See code: [src/commands/web-links/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/web-links/create.js)_
 
-## `box web-links:delete ID`
+## `box-u-ext web-links:delete ID`
 
 Delete a web link
 
 ```
 USAGE
-  $ box web-links:delete ID
+  $ box-u-ext web-links:delete ID
 
 ARGUMENTS
   ID  ID of the web link to delete
@@ -74,15 +74,15 @@ EXAMPLE
   box web-links:delete 12345
 ```
 
-_See code: [src/commands/web-links/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/web-links/delete.js)_
+_See code: [src/commands/web-links/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/web-links/delete.js)_
 
-## `box web-links:get ID`
+## `box-u-ext web-links:get ID`
 
 Get information about a web link
 
 ```
 USAGE
-  $ box web-links:get ID
+  $ box-u-ext web-links:get ID
 
 ARGUMENTS
   ID  ID of the web link to get
@@ -106,15 +106,15 @@ EXAMPLE
   box web-links:get 12345
 ```
 
-_See code: [src/commands/web-links/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/web-links/get.js)_
+_See code: [src/commands/web-links/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/web-links/get.js)_
 
-## `box web-links:move ID PARENTID`
+## `box-u-ext web-links:move ID PARENTID`
 
 Move a web link
 
 ```
 USAGE
-  $ box web-links:move ID PARENTID
+  $ box-u-ext web-links:move ID PARENTID
 
 ARGUMENTS
   ID        ID of the web link to move
@@ -139,15 +139,15 @@ EXAMPLE
   box web-links:move 12345 22222
 ```
 
-_See code: [src/commands/web-links/move.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/web-links/move.js)_
+_See code: [src/commands/web-links/move.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/web-links/move.js)_
 
-## `box web-links:update ID`
+## `box-u-ext web-links:update ID`
 
 Update a web link
 
 ```
 USAGE
-  $ box web-links:update ID
+  $ box-u-ext web-links:update ID
 
 ARGUMENTS
   ID  ID of the web link to update
@@ -174,4 +174,4 @@ EXAMPLE
   box web-links:update 12345 --name "Example Site"
 ```
 
-_See code: [src/commands/web-links/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/web-links/update.js)_
+_See code: [src/commands/web-links/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/web-links/update.js)_

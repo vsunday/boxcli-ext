@@ -1,20 +1,20 @@
-`box file-requests`
-===================
+`box-u-ext file-requests`
+=========================
 
 Copies existing file request to new folder
 
-* [`box file-requests:copy ID FOLDERID`](#box-file-requestscopy-id-folderid)
-* [`box file-requests:delete ID`](#box-file-requestsdelete-id)
-* [`box file-requests:get ID`](#box-file-requestsget-id)
-* [`box file-requests:update ID`](#box-file-requestsupdate-id)
+* [`box-u-ext file-requests:copy ID FOLDERID`](#box-u-ext-file-requestscopy-id-folderid)
+* [`box-u-ext file-requests:delete ID`](#box-u-ext-file-requestsdelete-id)
+* [`box-u-ext file-requests:get ID`](#box-u-ext-file-requestsget-id)
+* [`box-u-ext file-requests:update ID`](#box-u-ext-file-requestsupdate-id)
 
-## `box file-requests:copy ID FOLDERID`
+## `box-u-ext file-requests:copy ID FOLDERID`
 
 Copies existing file request to new folder
 
 ```
 USAGE
-  $ box file-requests:copy ID FOLDERID
+  $ box-u-ext file-requests:copy ID FOLDERID
 
 ARGUMENTS
   ID        ID of the file request to copy
@@ -55,15 +55,15 @@ EXAMPLE
   box file-requests:copy 22222 44444
 ```
 
-_See code: [src/commands/file-requests/copy.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/file-requests/copy.js)_
+_See code: [src/commands/file-requests/copy.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/file-requests/copy.js)_
 
-## `box file-requests:delete ID`
+## `box-u-ext file-requests:delete ID`
 
 Delete individual file request
 
 ```
 USAGE
-  $ box file-requests:delete ID
+  $ box-u-ext file-requests:delete ID
 
 ARGUMENTS
   ID  ID of the file request to delete
@@ -87,15 +87,15 @@ EXAMPLE
   box file-requests:delete 12345
 ```
 
-_See code: [src/commands/file-requests/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/file-requests/delete.js)_
+_See code: [src/commands/file-requests/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/file-requests/delete.js)_
 
-## `box file-requests:get ID`
+## `box-u-ext file-requests:get ID`
 
 Get information about an file request
 
 ```
 USAGE
-  $ box file-requests:get ID
+  $ box-u-ext file-requests:get ID
 
 ARGUMENTS
   ID  ID of the file request to get
@@ -119,15 +119,15 @@ EXAMPLE
   box file-requests:get 12345
 ```
 
-_See code: [src/commands/file-requests/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/file-requests/get.js)_
+_See code: [src/commands/file-requests/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/file-requests/get.js)_
 
-## `box file-requests:update ID`
+## `box-u-ext file-requests:update ID`
 
 Update a file request
 
 ```
 USAGE
-  $ box file-requests:update ID
+  $ box-u-ext file-requests:update ID
 
 ARGUMENTS
   ID  ID of the file request to update
@@ -170,4 +170,4 @@ EXAMPLE
   box file-requests:update 12345 --description "New file request description!"
 ```
 
-_See code: [src/commands/file-requests/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/file-requests/update.js)_
+_See code: [src/commands/file-requests/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/file-requests/update.js)_

@@ -1,20 +1,20 @@
-`box trash`
-===========
+`box-u-ext trash`
+=================
 
 List all items in trash
 
-* [`box trash`](#box-trash)
-* [`box trash:delete TYPE ID`](#box-trashdelete-type-id)
-* [`box trash:get TYPE ID`](#box-trashget-type-id)
-* [`box trash:restore TYPE ID`](#box-trashrestore-type-id)
+* [`box-u-ext trash`](#box-u-ext-trash)
+* [`box-u-ext trash:delete TYPE ID`](#box-u-ext-trashdelete-type-id)
+* [`box-u-ext trash:get TYPE ID`](#box-u-ext-trashget-type-id)
+* [`box-u-ext trash:restore TYPE ID`](#box-u-ext-trashrestore-type-id)
 
-## `box trash`
+## `box-u-ext trash`
 
 List all items in trash
 
 ```
 USAGE
-  $ box trash
+  $ box-u-ext trash
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -39,21 +39,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box trash:list
+  $ box-u-ext trash:list
 
 EXAMPLE
   box trash
 ```
 
-_See code: [src/commands/trash/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/trash/index.js)_
+_See code: [src/commands/trash/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/trash/index.js)_
 
-## `box trash:delete TYPE ID`
+## `box-u-ext trash:delete TYPE ID`
 
 Permanently delete an item
 
 ```
 USAGE
-  $ box trash:delete TYPE ID
+  $ box-u-ext trash:delete TYPE ID
 
 ARGUMENTS
   TYPE  (file|folder|web_link) Type of the item to permanently delete
@@ -78,15 +78,15 @@ EXAMPLE
   box trash:delete folder 22222
 ```
 
-_See code: [src/commands/trash/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/trash/delete.js)_
+_See code: [src/commands/trash/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/trash/delete.js)_
 
-## `box trash:get TYPE ID`
+## `box-u-ext trash:get TYPE ID`
 
 Get information about an item in trash
 
 ```
 USAGE
-  $ box trash:get TYPE ID
+  $ box-u-ext trash:get TYPE ID
 
 ARGUMENTS
   TYPE  (file|folder|web_link) Type of the item to get
@@ -111,15 +111,15 @@ EXAMPLE
   box trash:get folder 22222
 ```
 
-_See code: [src/commands/trash/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/trash/get.js)_
+_See code: [src/commands/trash/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/trash/get.js)_
 
-## `box trash:restore TYPE ID`
+## `box-u-ext trash:restore TYPE ID`
 
 Restore an item from trash
 
 ```
 USAGE
-  $ box trash:restore TYPE ID
+  $ box-u-ext trash:restore TYPE ID
 
 ARGUMENTS
   TYPE  (file|folder|web_link) Type of the item to restore
@@ -149,4 +149,4 @@ EXAMPLE
   box trash:restore folder 22222
 ```
 
-_See code: [src/commands/trash/restore.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/trash/restore.js)_
+_See code: [src/commands/trash/restore.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/trash/restore.js)_

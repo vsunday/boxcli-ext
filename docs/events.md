@@ -1,18 +1,18 @@
-`box events`
-============
+`box-u-ext events`
+==================
 
 Get events
 
-* [`box events`](#box-events)
-* [`box events:poll`](#box-eventspoll)
+* [`box-u-ext events`](#box-u-ext-events)
+* [`box-u-ext events:poll`](#box-u-ext-eventspoll)
 
-## `box events`
+## `box-u-ext events`
 
 Get events
 
 ```
 USAGE
-  $ box events
+  $ box-u-ext events
 
 OPTIONS
   -e, --enterprise
@@ -91,22 +91,22 @@ OPTIONS
       cursor position). Only two weeks of events are available via this feed, and you cannot set start and end time/dates.
 
 ALIASES
-  $ box events:get
+  $ box-u-ext events:get
 
 EXAMPLES
   box events
   box events --enterprise --created-after 2019-01-01
 ```
 
-_See code: [src/commands/events/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/events/index.js)_
+_See code: [src/commands/events/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/events/index.js)_
 
-## `box events:poll`
+## `box-u-ext events:poll`
 
 Poll the event stream
 
 ```
 USAGE
-  $ box events:poll
+  $ box-u-ext events:poll
 
 OPTIONS
   -e, --enterprise                       Get enterprise events
@@ -140,4 +140,4 @@ OPTIONS
                                          shorthand syntax 00t, like 05w for 5 weeks. If not used, defaults to now
 ```
 
-_See code: [src/commands/events/poll.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/events/poll.js)_
+_See code: [src/commands/events/poll.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/events/poll.js)_

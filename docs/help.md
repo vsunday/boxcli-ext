@@ -1,17 +1,17 @@
-`box help`
-==========
+`box-u-ext help`
+================
 
 Display help for the Box CLI
 
-* [`box help [COMMAND]`](#box-help-command)
+* [`box-u-ext help [COMMAND]`](#box-u-ext-help-command)
 
-## `box help [COMMAND]`
+## `box-u-ext help [COMMAND]`
 
-display help for box
+display help for box-u-ext
 
 ```
 USAGE
-  $ box help [COMMAND]
+  $ box-u-ext help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for

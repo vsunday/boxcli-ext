@@ -18,7 +18,7 @@ class CLITokenCache {
 	 */
 	constructor(environmentName) {
 
-		this.filePath = path.join(os.homedir(), '.box', `${environmentName}_token_cache.json`);
+		this.filePath = path.join(os.homedir(), '.box-u-ext', `${environmentName}_token_cache.json`);
 	}
 
 	/**

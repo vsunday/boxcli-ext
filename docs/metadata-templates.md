@@ -1,22 +1,22 @@
-`box metadata-templates`
-========================
+`box-u-ext metadata-templates`
+==============================
 
 Get all metadata templates in your Enterprise
 
-* [`box metadata-templates`](#box-metadata-templates)
-* [`box metadata-templates:cascade TEMPLATEKEY`](#box-metadata-templatescascade-templatekey)
-* [`box metadata-templates:create`](#box-metadata-templatescreate)
-* [`box metadata-templates:delete TEMPLATEKEY`](#box-metadata-templatesdelete-templatekey)
-* [`box metadata-templates:get TEMPLATEKEY`](#box-metadata-templatesget-templatekey)
-* [`box metadata-templates:update TEMPLATEKEY`](#box-metadata-templatesupdate-templatekey)
+* [`box-u-ext metadata-templates`](#box-u-ext-metadata-templates)
+* [`box-u-ext metadata-templates:cascade TEMPLATEKEY`](#box-u-ext-metadata-templatescascade-templatekey)
+* [`box-u-ext metadata-templates:create`](#box-u-ext-metadata-templatescreate)
+* [`box-u-ext metadata-templates:delete TEMPLATEKEY`](#box-u-ext-metadata-templatesdelete-templatekey)
+* [`box-u-ext metadata-templates:get TEMPLATEKEY`](#box-u-ext-metadata-templatesget-templatekey)
+* [`box-u-ext metadata-templates:update TEMPLATEKEY`](#box-u-ext-metadata-templatesupdate-templatekey)
 
-## `box metadata-templates`
+## `box-u-ext metadata-templates`
 
 Get all metadata templates in your Enterprise
 
 ```
 USAGE
-  $ box metadata-templates
+  $ box-u-ext metadata-templates
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -34,21 +34,21 @@ OPTIONS
   --save-to-file-path=save-to-file-path  Override default file path to save report
 
 ALIASES
-  $ box metadata-templates:list
+  $ box-u-ext metadata-templates:list
 
 EXAMPLE
   box metadata-templates
 ```
 
-_See code: [src/commands/metadata-templates/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/index.js)_
+_See code: [src/commands/metadata-templates/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/index.js)_
 
-## `box metadata-templates:cascade TEMPLATEKEY`
+## `box-u-ext metadata-templates:cascade TEMPLATEKEY`
 
 Create a new metadata cascade policy on a folder
 
 ```
 USAGE
-  $ box metadata-templates:cascade TEMPLATEKEY
+  $ box-u-ext metadata-templates:cascade TEMPLATEKEY
 
 ARGUMENTS
   TEMPLATEKEY  The template key of the metadata template to cascade
@@ -72,21 +72,21 @@ OPTIONS
   --scope=scope                          [default: enterprise] The scope of the metadata template to cascade
 
 ALIASES
-  $ box metadata-cascade-policies:create
+  $ box-u-ext metadata-cascade-policies:create
 
 EXAMPLE
   box metadata-templates:cascade employeeRecord --folder 22222
 ```
 
-_See code: [src/commands/metadata-templates/cascade.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/cascade.js)_
+_See code: [src/commands/metadata-templates/cascade.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/cascade.js)_
 
-## `box metadata-templates:create`
+## `box-u-ext metadata-templates:create`
 
 Create a new metadata template
 
 ```
 USAGE
-  $ box metadata-templates:create
+  $ box-u-ext metadata-templates:create
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -123,15 +123,15 @@ EXAMPLE
   box metadata-templates:create --display-name "Employee Record" --string Name --enum Department --option Sales
 ```
 
-_See code: [src/commands/metadata-templates/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/create.js)_
+_See code: [src/commands/metadata-templates/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/create.js)_
 
-## `box metadata-templates:delete TEMPLATEKEY`
+## `box-u-ext metadata-templates:delete TEMPLATEKEY`
 
 Delete a metadata template
 
 ```
 USAGE
-  $ box metadata-templates:delete TEMPLATEKEY
+  $ box-u-ext metadata-templates:delete TEMPLATEKEY
 
 ARGUMENTS
   TEMPLATEKEY  The template key of the metadata template to delete
@@ -156,15 +156,15 @@ EXAMPLE
   box metadata-templates:delete employeeRecord
 ```
 
-_See code: [src/commands/metadata-templates/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/delete.js)_
+_See code: [src/commands/metadata-templates/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/delete.js)_
 
-## `box metadata-templates:get TEMPLATEKEY`
+## `box-u-ext metadata-templates:get TEMPLATEKEY`
 
 Get information about a metadata template
 
 ```
 USAGE
-  $ box metadata-templates:get TEMPLATEKEY
+  $ box-u-ext metadata-templates:get TEMPLATEKEY
 
 ARGUMENTS
   TEMPLATEKEY  The template key of the template to get
@@ -189,15 +189,15 @@ EXAMPLE
   box metadata-templates:get employeeRecord
 ```
 
-_See code: [src/commands/metadata-templates/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/get.js)_
+_See code: [src/commands/metadata-templates/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/get.js)_
 
-## `box metadata-templates:update TEMPLATEKEY`
+## `box-u-ext metadata-templates:update TEMPLATEKEY`
 
 Update a metadata template
 
 ```
 USAGE
-  $ box metadata-templates:update TEMPLATEKEY
+  $ box-u-ext metadata-templates:update TEMPLATEKEY
 
 ARGUMENTS
   TEMPLATEKEY  The key of the template to update
@@ -275,4 +275,4 @@ EXAMPLE
   box metadata-templates:update employeeRecord --hidden
 ```
 
-_See code: [src/commands/metadata-templates/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/metadata-templates/update.js)_
+_See code: [src/commands/metadata-templates/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/metadata-templates/update.js)_

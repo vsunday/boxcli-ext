@@ -1,28 +1,28 @@
-`box retention-policies`
-========================
+`box-u-ext retention-policies`
+==============================
 
 List all retention policies for your enterprise
 
-* [`box retention-policies`](#box-retention-policies)
-* [`box retention-policies:assign POLICYID`](#box-retention-policiesassign-policyid)
-* [`box retention-policies:assignments ID`](#box-retention-policiesassignments-id)
-* [`box retention-policies:assignments:get ID`](#box-retention-policiesassignmentsget-id)
-* [`box retention-policies:assignments:remove ID`](#box-retention-policiesassignmentsremove-id)
-* [`box retention-policies:create POLICYNAME`](#box-retention-policiescreate-policyname)
-* [`box retention-policies:file-version-retentions`](#box-retention-policiesfile-version-retentions)
-* [`box retention-policies:file-version-retentions:get ID`](#box-retention-policiesfile-version-retentionsget-id)
-* [`box retention-policies:file-versions-under-retention:get ID`](#box-retention-policiesfile-versions-under-retentionget-id)
-* [`box retention-policies:files-under-retention:get ID`](#box-retention-policiesfiles-under-retentionget-id)
-* [`box retention-policies:get ID`](#box-retention-policiesget-id)
-* [`box retention-policies:update ID`](#box-retention-policiesupdate-id)
+* [`box-u-ext retention-policies`](#box-u-ext-retention-policies)
+* [`box-u-ext retention-policies:assign POLICYID`](#box-u-ext-retention-policiesassign-policyid)
+* [`box-u-ext retention-policies:assignments ID`](#box-u-ext-retention-policiesassignments-id)
+* [`box-u-ext retention-policies:assignments:get ID`](#box-u-ext-retention-policiesassignmentsget-id)
+* [`box-u-ext retention-policies:assignments:remove ID`](#box-u-ext-retention-policiesassignmentsremove-id)
+* [`box-u-ext retention-policies:create POLICYNAME`](#box-u-ext-retention-policiescreate-policyname)
+* [`box-u-ext retention-policies:file-version-retentions`](#box-u-ext-retention-policiesfile-version-retentions)
+* [`box-u-ext retention-policies:file-version-retentions:get ID`](#box-u-ext-retention-policiesfile-version-retentionsget-id)
+* [`box-u-ext retention-policies:file-versions-under-retention:get ID`](#box-u-ext-retention-policiesfile-versions-under-retentionget-id)
+* [`box-u-ext retention-policies:files-under-retention:get ID`](#box-u-ext-retention-policiesfiles-under-retentionget-id)
+* [`box-u-ext retention-policies:get ID`](#box-u-ext-retention-policiesget-id)
+* [`box-u-ext retention-policies:update ID`](#box-u-ext-retention-policiesupdate-id)
 
-## `box retention-policies`
+## `box-u-ext retention-policies`
 
 List all retention policies for your enterprise
 
 ```
 USAGE
-  $ box retention-policies
+  $ box-u-ext retention-policies
 
 OPTIONS
   -h, --help                                   Show CLI help
@@ -54,15 +54,15 @@ EXAMPLE
   box retention-policies
 ```
 
-_See code: [src/commands/retention-policies/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/index.js)_
+_See code: [src/commands/retention-policies/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/index.js)_
 
-## `box retention-policies:assign POLICYID`
+## `box-u-ext retention-policies:assign POLICYID`
 
 Assign a retention policy assignment
 
 ```
 USAGE
-  $ box retention-policies:assign POLICYID
+  $ box-u-ext retention-policies:assign POLICYID
 
 ARGUMENTS
   POLICYID  The ID of the retention policy to assign this content to
@@ -103,15 +103,15 @@ EXAMPLE
   --start-date-field=upload_date
 ```
 
-_See code: [src/commands/retention-policies/assign.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/assign.js)_
+_See code: [src/commands/retention-policies/assign.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/assign.js)_
 
-## `box retention-policies:assignments ID`
+## `box-u-ext retention-policies:assignments ID`
 
 List all retention policies for your enterprise
 
 ```
 USAGE
-  $ box retention-policies:assignments ID
+  $ box-u-ext retention-policies:assignments ID
 
 ARGUMENTS
   ID  ID of the retention policy to get assignments for
@@ -144,15 +144,15 @@ EXAMPLE
   box retention-policies:assignments 12345
 ```
 
-_See code: [src/commands/retention-policies/assignments/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/assignments/index.js)_
+_See code: [src/commands/retention-policies/assignments/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/assignments/index.js)_
 
-## `box retention-policies:assignments:get ID`
+## `box-u-ext retention-policies:assignments:get ID`
 
 Get information about a retention policy assignment
 
 ```
 USAGE
-  $ box retention-policies:assignments:get ID
+  $ box-u-ext retention-policies:assignments:get ID
 
 ARGUMENTS
   ID  ID of the retention policy assignment to get
@@ -176,15 +176,15 @@ EXAMPLE
   box retention-policies:assignments:get 1235
 ```
 
-_See code: [src/commands/retention-policies/assignments/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/assignments/get.js)_
+_See code: [src/commands/retention-policies/assignments/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/assignments/get.js)_
 
-## `box retention-policies:assignments:remove ID`
+## `box-u-ext retention-policies:assignments:remove ID`
 
 Remove a retention policy assignment applied to content
 
 ```
 USAGE
-  $ box retention-policies:assignments:remove ID
+  $ box-u-ext retention-policies:assignments:remove ID
 
 ARGUMENTS
   ID  ID of the retention policy assignment to remove
@@ -208,15 +208,15 @@ EXAMPLE
   box retention-policies:assignments:remove 1235
 ```
 
-_See code: [src/commands/retention-policies/assignments/remove.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/assignments/remove.js)_
+_See code: [src/commands/retention-policies/assignments/remove.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/assignments/remove.js)_
 
-## `box retention-policies:create POLICYNAME`
+## `box-u-ext retention-policies:create POLICYNAME`
 
 Create a new retention policy
 
 ```
 USAGE
-  $ box retention-policies:create POLICYNAME
+  $ box-u-ext retention-policies:create POLICYNAME
 
 ARGUMENTS
   POLICYNAME  Name of retention policy to be created
@@ -274,15 +274,15 @@ EXAMPLE
   --custom-notification-recipient=id=12345,login=user@box.com
 ```
 
-_See code: [src/commands/retention-policies/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/create.js)_
+_See code: [src/commands/retention-policies/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/create.js)_
 
-## `box retention-policies:file-version-retentions`
+## `box-u-ext retention-policies:file-version-retentions`
 
 List all file version retentions for your enterprise
 
 ```
 USAGE
-  $ box retention-policies:file-version-retentions
+  $ box-u-ext retention-policies:file-version-retentions
 
 OPTIONS
   -h, --help                                                Show CLI help
@@ -326,15 +326,15 @@ EXAMPLE
   box retention-policies:file-version-retentions
 ```
 
-_See code: [src/commands/retention-policies/file-version-retentions/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/file-version-retentions/index.js)_
+_See code: [src/commands/retention-policies/file-version-retentions/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/file-version-retentions/index.js)_
 
-## `box retention-policies:file-version-retentions:get ID`
+## `box-u-ext retention-policies:file-version-retentions:get ID`
 
 Get information about a file version retention policy
 
 ```
 USAGE
-  $ box retention-policies:file-version-retentions:get ID
+  $ box-u-ext retention-policies:file-version-retentions:get ID
 
 ARGUMENTS
   ID  ID of the file version retention to get
@@ -358,15 +358,15 @@ EXAMPLE
   box retention-policies:file-version-retentions:get 77777
 ```
 
-_See code: [src/commands/retention-policies/file-version-retentions/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/file-version-retentions/get.js)_
+_See code: [src/commands/retention-policies/file-version-retentions/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/file-version-retentions/get.js)_
 
-## `box retention-policies:file-versions-under-retention:get ID`
+## `box-u-ext retention-policies:file-versions-under-retention:get ID`
 
 Get information about file versions under retention for assignment
 
 ```
 USAGE
-  $ box retention-policies:file-versions-under-retention:get ID
+  $ box-u-ext retention-policies:file-versions-under-retention:get ID
 
 ARGUMENTS
   ID  ID of the retention policy assignment
@@ -397,15 +397,15 @@ EXAMPLE
   box retention-policies:file-versions-under-retention:get 77777
 ```
 
-_See code: [src/commands/retention-policies/file-versions-under-retention/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/file-versions-under-retention/get.js)_
+_See code: [src/commands/retention-policies/file-versions-under-retention/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/file-versions-under-retention/get.js)_
 
-## `box retention-policies:files-under-retention:get ID`
+## `box-u-ext retention-policies:files-under-retention:get ID`
 
 Get information about files under retention for assignment
 
 ```
 USAGE
-  $ box retention-policies:files-under-retention:get ID
+  $ box-u-ext retention-policies:files-under-retention:get ID
 
 ARGUMENTS
   ID  ID of the retention policy assignment
@@ -436,15 +436,15 @@ EXAMPLE
   box retention-policies:files-under-retention:get 77777
 ```
 
-_See code: [src/commands/retention-policies/files-under-retention/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/files-under-retention/get.js)_
+_See code: [src/commands/retention-policies/files-under-retention/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/files-under-retention/get.js)_
 
-## `box retention-policies:get ID`
+## `box-u-ext retention-policies:get ID`
 
 Get information about a retention policy
 
 ```
 USAGE
-  $ box retention-policies:get ID
+  $ box-u-ext retention-policies:get ID
 
 ARGUMENTS
   ID  ID of the retention policy to get
@@ -468,15 +468,15 @@ EXAMPLE
   box retention-policies:get 12345
 ```
 
-_See code: [src/commands/retention-policies/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/get.js)_
+_See code: [src/commands/retention-policies/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/get.js)_
 
-## `box retention-policies:update ID`
+## `box-u-ext retention-policies:update ID`
 
 Update a retention policy
 
 ```
 USAGE
-  $ box retention-policies:update ID
+  $ box-u-ext retention-policies:update ID
 
 ARGUMENTS
   ID  ID of the retention policy to update
@@ -528,4 +528,4 @@ EXAMPLE
   box retention-policies:update 12345
 ```
 
-_See code: [src/commands/retention-policies/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/retention-policies/update.js)_
+_See code: [src/commands/retention-policies/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/retention-policies/update.js)_

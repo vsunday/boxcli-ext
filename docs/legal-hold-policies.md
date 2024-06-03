@@ -1,27 +1,27 @@
-`box legal-hold-policies`
-=========================
+`box-u-ext legal-hold-policies`
+===============================
 
 List legal hold policies
 
-* [`box legal-hold-policies`](#box-legal-hold-policies)
-* [`box legal-hold-policies:assign POLICYID`](#box-legal-hold-policiesassign-policyid)
-* [`box legal-hold-policies:assignments ID`](#box-legal-hold-policiesassignments-id)
-* [`box legal-hold-policies:assignments:delete ID`](#box-legal-hold-policiesassignmentsdelete-id)
-* [`box legal-hold-policies:assignments:get ID`](#box-legal-hold-policiesassignmentsget-id)
-* [`box legal-hold-policies:create POLICYNAME`](#box-legal-hold-policiescreate-policyname)
-* [`box legal-hold-policies:delete ID`](#box-legal-hold-policiesdelete-id)
-* [`box legal-hold-policies:file-version-holds ID`](#box-legal-hold-policiesfile-version-holds-id)
-* [`box legal-hold-policies:file-version-holds:get ID`](#box-legal-hold-policiesfile-version-holdsget-id)
-* [`box legal-hold-policies:get ID`](#box-legal-hold-policiesget-id)
-* [`box legal-hold-policies:update ID`](#box-legal-hold-policiesupdate-id)
+* [`box-u-ext legal-hold-policies`](#box-u-ext-legal-hold-policies)
+* [`box-u-ext legal-hold-policies:assign POLICYID`](#box-u-ext-legal-hold-policiesassign-policyid)
+* [`box-u-ext legal-hold-policies:assignments ID`](#box-u-ext-legal-hold-policiesassignments-id)
+* [`box-u-ext legal-hold-policies:assignments:delete ID`](#box-u-ext-legal-hold-policiesassignmentsdelete-id)
+* [`box-u-ext legal-hold-policies:assignments:get ID`](#box-u-ext-legal-hold-policiesassignmentsget-id)
+* [`box-u-ext legal-hold-policies:create POLICYNAME`](#box-u-ext-legal-hold-policiescreate-policyname)
+* [`box-u-ext legal-hold-policies:delete ID`](#box-u-ext-legal-hold-policiesdelete-id)
+* [`box-u-ext legal-hold-policies:file-version-holds ID`](#box-u-ext-legal-hold-policiesfile-version-holds-id)
+* [`box-u-ext legal-hold-policies:file-version-holds:get ID`](#box-u-ext-legal-hold-policiesfile-version-holdsget-id)
+* [`box-u-ext legal-hold-policies:get ID`](#box-u-ext-legal-hold-policiesget-id)
+* [`box-u-ext legal-hold-policies:update ID`](#box-u-ext-legal-hold-policiesupdate-id)
 
-## `box legal-hold-policies`
+## `box-u-ext legal-hold-policies`
 
 List legal hold policies
 
 ```
 USAGE
-  $ box legal-hold-policies
+  $ box-u-ext legal-hold-policies
 
 OPTIONS
   -h, --help                             Show CLI help
@@ -51,15 +51,15 @@ EXAMPLE
   box legal-hold-policies
 ```
 
-_See code: [src/commands/legal-hold-policies/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/index.js)_
+_See code: [src/commands/legal-hold-policies/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/index.js)_
 
-## `box legal-hold-policies:assign POLICYID`
+## `box-u-ext legal-hold-policies:assign POLICYID`
 
 Create a new policy assignment
 
 ```
 USAGE
-  $ box legal-hold-policies:assign POLICYID
+  $ box-u-ext legal-hold-policies:assign POLICYID
 
 ARGUMENTS
   POLICYID  ID of the legal hold policy to assign
@@ -85,15 +85,15 @@ EXAMPLE
   box legal-hold-policies:assign 99999 --assign-to-type folder --assign-to-id 22222
 ```
 
-_See code: [src/commands/legal-hold-policies/assign.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/assign.js)_
+_See code: [src/commands/legal-hold-policies/assign.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/assign.js)_
 
-## `box legal-hold-policies:assignments ID`
+## `box-u-ext legal-hold-policies:assignments ID`
 
 List policy assignments
 
 ```
 USAGE
-  $ box legal-hold-policies:assignments ID
+  $ box-u-ext legal-hold-policies:assignments ID
 
 ARGUMENTS
   ID  ID of the legal hold policy get get assignments for
@@ -126,15 +126,15 @@ EXAMPLE
   box legal-hold-policies:assignments 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/assignments/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/assignments/index.js)_
+_See code: [src/commands/legal-hold-policies/assignments/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/assignments/index.js)_
 
-## `box legal-hold-policies:assignments:delete ID`
+## `box-u-ext legal-hold-policies:assignments:delete ID`
 
 Delete a policy assignment
 
 ```
 USAGE
-  $ box legal-hold-policies:assignments:delete ID
+  $ box-u-ext legal-hold-policies:assignments:delete ID
 
 ARGUMENTS
   ID  ID of the policy assignment to delete
@@ -158,15 +158,15 @@ EXAMPLE
   box legal-hold-policies:assignments:delete 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/assignments/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/assignments/delete.js)_
+_See code: [src/commands/legal-hold-policies/assignments/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/assignments/delete.js)_
 
-## `box legal-hold-policies:assignments:get ID`
+## `box-u-ext legal-hold-policies:assignments:get ID`
 
 Get information about a policy assignment
 
 ```
 USAGE
-  $ box legal-hold-policies:assignments:get ID
+  $ box-u-ext legal-hold-policies:assignments:get ID
 
 ARGUMENTS
   ID  ID of the policy assignment to get
@@ -190,15 +190,15 @@ EXAMPLE
   box legal-hold-policies:assignments:get 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/assignments/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/assignments/get.js)_
+_See code: [src/commands/legal-hold-policies/assignments/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/assignments/get.js)_
 
-## `box legal-hold-policies:create POLICYNAME`
+## `box-u-ext legal-hold-policies:create POLICYNAME`
 
 Create a new legal hold policy
 
 ```
 USAGE
-  $ box legal-hold-policies:create POLICYNAME
+  $ box-u-ext legal-hold-policies:create POLICYNAME
 
 ARGUMENTS
   POLICYNAME  Name of the legal hold policy
@@ -237,15 +237,15 @@ EXAMPLE
   box legal-hold-policies:create "Class Action Suit" --ongoing
 ```
 
-_See code: [src/commands/legal-hold-policies/create.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/create.js)_
+_See code: [src/commands/legal-hold-policies/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/create.js)_
 
-## `box legal-hold-policies:delete ID`
+## `box-u-ext legal-hold-policies:delete ID`
 
 Delete a legal hold policy
 
 ```
 USAGE
-  $ box legal-hold-policies:delete ID
+  $ box-u-ext legal-hold-policies:delete ID
 
 ARGUMENTS
   ID  ID of the legal hold policy to delete
@@ -269,15 +269,15 @@ EXAMPLE
   box legal-hold-policies:delete 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/delete.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/delete.js)_
+_See code: [src/commands/legal-hold-policies/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/delete.js)_
 
-## `box legal-hold-policies:file-version-holds ID`
+## `box-u-ext legal-hold-policies:file-version-holds ID`
 
 List file version legal holds for a legal hold policy
 
 ```
 USAGE
-  $ box legal-hold-policies:file-version-holds ID
+  $ box-u-ext legal-hold-policies:file-version-holds ID
 
 ARGUMENTS
   ID  ID of the legal hold policy to get holds for
@@ -308,15 +308,15 @@ EXAMPLE
   box legal-hold-policies:file-version-holds 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/file-version-holds/index.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/file-version-holds/index.js)_
+_See code: [src/commands/legal-hold-policies/file-version-holds/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/file-version-holds/index.js)_
 
-## `box legal-hold-policies:file-version-holds:get ID`
+## `box-u-ext legal-hold-policies:file-version-holds:get ID`
 
 Get information about a file version legal hold
 
 ```
 USAGE
-  $ box legal-hold-policies:file-version-holds:get ID
+  $ box-u-ext legal-hold-policies:file-version-holds:get ID
 
 ARGUMENTS
   ID  ID of the file version legal hold to get
@@ -340,15 +340,15 @@ EXAMPLE
   box legal-hold-policies:file-version-holds:get 12345
 ```
 
-_See code: [src/commands/legal-hold-policies/file-version-holds/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/file-version-holds/get.js)_
+_See code: [src/commands/legal-hold-policies/file-version-holds/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/file-version-holds/get.js)_
 
-## `box legal-hold-policies:get ID`
+## `box-u-ext legal-hold-policies:get ID`
 
 Get information about a legal hold policy
 
 ```
 USAGE
-  $ box legal-hold-policies:get ID
+  $ box-u-ext legal-hold-policies:get ID
 
 ARGUMENTS
   ID  ID of the legal hold policy to get
@@ -372,15 +372,15 @@ EXAMPLE
   box legal-hold-policies:get 99999
 ```
 
-_See code: [src/commands/legal-hold-policies/get.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/get.js)_
+_See code: [src/commands/legal-hold-policies/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/get.js)_
 
-## `box legal-hold-policies:update ID`
+## `box-u-ext legal-hold-policies:update ID`
 
 Update a legal hold policy
 
 ```
 USAGE
-  $ box legal-hold-policies:update ID
+  $ box-u-ext legal-hold-policies:update ID
 
 ARGUMENTS
   ID  ID of a legal hold policy to update
@@ -407,4 +407,4 @@ EXAMPLE
   box legal-hold-policies:update 99999 --description "Files related to the ongoing class action suit"
 ```
 
-_See code: [src/commands/legal-hold-policies/update.js](https://github.com/box/boxcli/blob/v3.14.0/src/commands/legal-hold-policies/update.js)_
+_See code: [src/commands/legal-hold-policies/update.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.1/src/commands/legal-hold-policies/update.js)_
