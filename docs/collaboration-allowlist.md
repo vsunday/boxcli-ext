@@ -46,7 +46,7 @@ EXAMPLE
   box collaboration-allowlist
 ```
 
-_See code: [src/commands/collaboration-allowlist/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/index.js)_
+_See code: [src/commands/collaboration-allowlist/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/index.js)_
 
 ## `box-u-ext collaboration-allowlist:add DOMAIN`
 
@@ -79,7 +79,7 @@ EXAMPLE
   box collaboration-allowlist:add example.com --direction outbound
 ```
 
-_See code: [src/commands/collaboration-allowlist/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/add.js)_
+_See code: [src/commands/collaboration-allowlist/add.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/add.js)_
 
 ## `box-u-ext collaboration-allowlist:delete ID`
 
@@ -111,7 +111,7 @@ EXAMPLE
   box collaboration-allowlist:delete 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/delete.js)_
+_See code: [src/commands/collaboration-allowlist/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/delete.js)_
 
 ## `box-u-ext collaboration-allowlist:exemptions`
 
@@ -147,7 +147,7 @@ EXAMPLE
   box collaboration-allowlist:exemptions
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/exemptions/index.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/exemptions/index.js)_
 
 ## `box-u-ext collaboration-allowlist:exemptions:create USERID`
 
@@ -179,7 +179,7 @@ EXAMPLE
   box collaboration-allowlist:exemptions:create 11111
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/exemptions/create.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/exemptions/create.js)_
 
 ## `box-u-ext collaboration-allowlist:exemptions:delete ID`
 
@@ -211,7 +211,7 @@ EXAMPLE
   box collaboration-allowlist:exemptions:delete 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/exemptions/delete.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/exemptions/delete.js)_
 
 ## `box-u-ext collaboration-allowlist:exemptions:get ID`
 
@@ -243,7 +243,7 @@ EXAMPLE
   box collaboration-allowlist:exemptions:get 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/exemptions/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/exemptions/get.js)_
+_See code: [src/commands/collaboration-allowlist/exemptions/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/exemptions/get.js)_
 
 ## `box-u-ext collaboration-allowlist:get ID`
 
@@ -275,4 +275,4 @@ EXAMPLE
   box collaboration-allowlist:get 12345
 ```
 
-_See code: [src/commands/collaboration-allowlist/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/collaboration-allowlist/get.js)_
+_See code: [src/commands/collaboration-allowlist/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/collaboration-allowlist/get.js)_

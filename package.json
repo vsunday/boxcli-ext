@@ -9,7 +9,7 @@
 		"upload",
 		"download"
 	],
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"author": "ykikuchi <ykikuchi@box.com>",
 	"license": "Apache-2.0",
 	"main": "src/index.js",

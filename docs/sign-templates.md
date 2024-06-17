@@ -40,7 +40,7 @@ EXAMPLE
   box sign-templates
 ```
 
-_See code: [src/commands/sign-templates/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/sign-templates/index.js)_
+_See code: [src/commands/sign-templates/index.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/sign-templates/index.js)_
 
 ## `box-u-ext sign-templates:get ID`
 
@@ -72,4 +72,4 @@ EXAMPLE
   box sign-templates:get 12345
 ```
 
-_See code: [src/commands/sign-templates/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/sign-templates/get.js)_
+_See code: [src/commands/sign-templates/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/sign-templates/get.js)_

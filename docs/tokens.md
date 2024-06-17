@@ -29,7 +29,7 @@ OPTIONS
   --no-color             Turn off colors for logging
 ```
 
-_See code: [src/commands/tokens/exchange.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/tokens/exchange.js)_
+_See code: [src/commands/tokens/exchange.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/tokens/exchange.js)_
 
 ## `box-u-ext tokens:get`
 
@@ -47,7 +47,7 @@ OPTIONS
   --no-color             Turn off colors for logging
 ```
 
-_See code: [src/commands/tokens/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/tokens/get.js)_
+_See code: [src/commands/tokens/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/tokens/get.js)_
 
 ## `box-u-ext tokens:revoke TOKEN`
 
@@ -67,4 +67,4 @@ OPTIONS
   --no-color     Turn off colors for logging
 ```
 
-_See code: [src/commands/tokens/revoke.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.2/src/commands/tokens/revoke.js)_
+_See code: [src/commands/tokens/revoke.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/tokens/revoke.js)_

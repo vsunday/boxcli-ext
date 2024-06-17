@@ -6,13 +6,13 @@ const { flags } = require('@oclif/command');
 class UsersTakeOwnershipCommand extends BoxCommand {
 	async run() {
 		const { flags, args } = this.parse(UsersTakeOwnershipCommand);
-		const current_user_id = (
-			await this.client.users.get(this.client.CURRENT_USER_ID)
-		).id;
+		// const current_user_id = (
+		// 	await this.client.users.get(this.client.CURRENT_USER_ID)
+		// ).id;
 		let params = {
 			body: {
 				owned_by: {
-					id: current_user_id,
+					id: args.NEWOWNERID,
 				},
 			},
 			qs: {},
@@ -34,8 +34,8 @@ class UsersTakeOwnershipCommand extends BoxCommand {
 }
 
 UsersTakeOwnershipCommand.description =
-	"Move a user's root content to current user";
-UsersTakeOwnershipCommand.examples = ['box users:take-ownership 33333'];
+	"Move a ID user's root content to NEWOWNERID user";
+UsersTakeOwnershipCommand.examples = ['box users:take-ownership 33333 99999'];
 // UsersChangeOwnerCommand._endpoint = 'put_users_id_folders_id';
 
 UsersTakeOwnershipCommand.flags = {
@@ -52,6 +52,12 @@ UsersTakeOwnershipCommand.args = [
 		required: true,
 		hidden: false,
 		description: 'User whose content should be moved',
+	},
+	{
+		name: 'NEWOWNERID',
+		required: true,
+		hidden: false,
+		description: 'User who will own other users\' contents',
 	},
 ];
 
