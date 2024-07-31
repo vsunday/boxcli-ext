@@ -26,7 +26,7 @@ class UsersAddCollabs extends BoxCommand {
 	async run() {
 		const { args, flags } = await this.parse(UsersAddCollabs);
 
-		this.client.asUser(args.NEWOWNERID)
+		this.client.asUser(args.NEWOWNERID);
 
 		// const name = flags.name ?? 'world';
 		// this.log(
@@ -48,15 +48,27 @@ class UsersAddCollabs extends BoxCommand {
 		}
 
 		// add collab
-		const items = await this.client.folders.getItems(0, {
-			fields: 'id,type,name',
-		});
-		const target_folder = items.buffer.find((item) =>
+		let items = [];
+		let next_marker = "DEFAULT";
+
+		while (next_marker) {
+			const params = { usemarker: true, limit: 1000, fields: 'id,type,name' };
+			if (typeof next_marker == "string" && next_marker != "DEFAULT") {
+				params.marker = next_marker;
+			}
+			const api_result = await this.client.folders.getItems(0, params)
+			items = items.concat(api_result.buffer);
+			next_marker = api_result.nextValue;
+		}
+		// const items = await this.client.folders.getItems(0, {
+		// 	fields: 'id,type,name',
+		// });
+		const target_folder = items.find((item) =>
 			item.name.includes(args.EMAILADDRESS)
 		);
 		if (!target_folder) {
 			this.error(
-				`User ${args.id} does not have a folder with ${args.EMAILADDRESS}`
+				`There is no folder for ${args.ID} whose name containing ${args.EMAILADDRESS}`
 			);
 		}
 		const collab = await this.client.collaborations.createWithUserID(
@@ -72,7 +84,9 @@ class UsersAddCollabs extends BoxCommand {
 
 UsersAddCollabs.description =
 	'Invite former owners to their respective folders';
-UsersAddCollabs.examples = ['box users:add-collabs 22222 jdoe@example.com 99999'];
+UsersAddCollabs.examples = [
+	'box users:add-collabs 22222 jdoe@example.com 99999',
+];
 UsersAddCollabs.flags = {
 	...BoxCommand.flags,
 };

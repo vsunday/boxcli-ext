@@ -53,7 +53,7 @@ EXAMPLE
   box shared-links:create 22222 folder --access company --vanity-name my-custom-name-123
 ```
 
-_See code: [src/commands/shared-links/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/shared-links/create.js)_
+_See code: [src/commands/shared-links/create.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.5/src/commands/shared-links/create.js)_
 
 ## `box-u-ext shared-links:delete ITEMID ITEMTYPE`
 
@@ -86,7 +86,7 @@ EXAMPLE
   box shared-links:delete 22222 folder
 ```
 
-_See code: [src/commands/shared-links/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/shared-links/delete.js)_
+_See code: [src/commands/shared-links/delete.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.5/src/commands/shared-links/delete.js)_
 
 ## `box-u-ext shared-links:get URL`
 
@@ -119,4 +119,4 @@ EXAMPLE
   box shared-links:get https://app.box.com/s/13ynxiqe3y4tup3j0yn4qairs5ebfxo3
 ```
 
-_See code: [src/commands/shared-links/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.4/src/commands/shared-links/get.js)_
+_See code: [src/commands/shared-links/get.js](https://github.com/vsunday/boxcli-ext/blob/v0.0.5/src/commands/shared-links/get.js)_
